@@ -6,6 +6,21 @@ logistic regression model without regularization.
 
 In particular it involves the implementation of such algorithm from scratch and comparison to the Logistic Regression available in scikit-learn package.
 
+# Requirements
+
+All the scripts have been executed with [Python 3.13.2](https://www.python.org/). [Pyenv](https://github.com/pyenv/pyenv) can be used to easily manage your python installations. It is recommended to create a python environment in the cloned repository:
+
+```
+python -m venv --prompt venv .\venv
+```
+
+Afterwards activate the environment (./venv/Scripts) and install the requirements present in requirements.txt:
+
+```
+pip install -r requirements.txt
+```
+
+All the scripts are formatted with the Black formatter.
 
 # Directory structure
 
