@@ -1,0 +1,9 @@
+p,n,d,g,metric_value,metric_name,model
+0.1,1000,10,0.1,0.925,Accuracy,LogRegCCD
+0.1,1000,10,0.1,0.94,Accuracy,LogReg sklearn
+0.1,1000,10,0.5,0.865,Accuracy,LogRegCCD
+0.1,1000,10,0.5,0.87,Accuracy,LogReg sklearn
+0.5,1000,10,0.1,0.535,Accuracy,LogRegCCD
+0.5,1000,10,0.1,0.73,Accuracy,LogReg sklearn
+0.5,1000,10,0.5,0.505,Accuracy,LogRegCCD
+0.5,1000,10,0.5,0.685,Accuracy,LogReg sklearn
