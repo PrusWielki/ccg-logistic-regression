@@ -22,6 +22,10 @@ pip install -r requirements.txt
 
 All the scripts are formatted with the Black formatter.
 
+# Reproducibility
+
+To ensure reproducibility: download the datasets from the provided links, use the same Python version (Requirements) and don't change the seeds. The experiments have been performed on a Windows 11 Intel i5 machine.
+
 # Directory structure
 
 ```  
@@ -37,5 +41,3 @@ TODO:
 1. Place here resulting graphics of comparison and performance.
 2. Add high-level overview of the algorithm
 3. Add description of the datasets used
-4. Add information about reproducibility, general clean code pricnicples used, and docstring documentation
-5. Add information about directory structure
