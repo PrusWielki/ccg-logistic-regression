@@ -6,6 +6,8 @@ logistic regression model without regularization.
 
 In particular it involves the implementation of such algorithm from scratch and comparison to the Logistic Regression available in scikit-learn package.
 
+The details of the data and algorithms used are in the solution.ipynb and in the ./report/report.pdf
+
 # Requirements
 
 All the scripts have been executed with [Python 3.13.2](https://www.python.org/). [Pyenv](https://github.com/pyenv/pyenv) can be used to easily manage your python installations. It is recommended to create a python environment in the cloned repository:
@@ -36,8 +38,7 @@ To ensure reproducibility: download the datasets from the provided links, use th
 └── solution.ipynb  
 ```  
 
+
 TODO:
 
 1. Place here resulting graphics of comparison and performance.
-2. Add high-level overview of the algorithm
-3. Add description of the datasets used
