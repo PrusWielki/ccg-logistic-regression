@@ -1,9 +1,201 @@
 p,n,d,g,metric_value,metric_name,model
-0.1,1000,10,0.1,0.925,Accuracy,LogRegCCD
-0.1,1000,10,0.1,0.94,Accuracy,LogReg sklearn
-0.1,1000,10,0.5,0.865,Accuracy,LogRegCCD
-0.1,1000,10,0.5,0.87,Accuracy,LogReg sklearn
-0.5,1000,10,0.1,0.535,Accuracy,LogRegCCD
-0.5,1000,10,0.1,0.73,Accuracy,LogReg sklearn
-0.5,1000,10,0.5,0.505,Accuracy,LogRegCCD
-0.5,1000,10,0.5,0.685,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.5225,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.7275,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.48,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.7125,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.5125,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.6775,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.4725,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.69,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.49,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.735,Accuracy,LogReg sklearn
+0.3,2000,10,0.3,0.7025,Accuracy,LogRegCCD
+0.3,2000,10,0.3,0.7575,Accuracy,LogReg sklearn
+0.3,2000,10,0.3,0.6675,Accuracy,LogRegCCD
+0.3,2000,10,0.3,0.7675,Accuracy,LogReg sklearn
+0.3,2000,10,0.3,0.735,Accuracy,LogRegCCD
+0.3,2000,10,0.3,0.7875,Accuracy,LogReg sklearn
+0.3,2000,10,0.3,0.6925,Accuracy,LogRegCCD
+0.3,2000,10,0.3,0.75,Accuracy,LogReg sklearn
+0.3,2000,10,0.3,0.685,Accuracy,LogRegCCD
+0.3,2000,10,0.3,0.74,Accuracy,LogReg sklearn
+0.4,2000,10,0.3,0.58,Accuracy,LogRegCCD
+0.4,2000,10,0.3,0.72,Accuracy,LogReg sklearn
+0.4,2000,10,0.3,0.5875,Accuracy,LogRegCCD
+0.4,2000,10,0.3,0.77,Accuracy,LogReg sklearn
+0.4,2000,10,0.3,0.6225,Accuracy,LogRegCCD
+0.4,2000,10,0.3,0.73,Accuracy,LogReg sklearn
+0.4,2000,10,0.3,0.585,Accuracy,LogRegCCD
+0.4,2000,10,0.3,0.6875,Accuracy,LogReg sklearn
+0.4,2000,10,0.3,0.6025,Accuracy,LogRegCCD
+0.4,2000,10,0.3,0.715,Accuracy,LogReg sklearn
+0.6,2000,10,0.3,0.58,Accuracy,LogRegCCD
+0.6,2000,10,0.3,0.715,Accuracy,LogReg sklearn
+0.6,2000,10,0.3,0.5875,Accuracy,LogRegCCD
+0.6,2000,10,0.3,0.745,Accuracy,LogReg sklearn
+0.6,2000,10,0.3,0.6225,Accuracy,LogRegCCD
+0.6,2000,10,0.3,0.75,Accuracy,LogReg sklearn
+0.6,2000,10,0.3,0.585,Accuracy,LogRegCCD
+0.6,2000,10,0.3,0.695,Accuracy,LogReg sklearn
+0.6,2000,10,0.3,0.6025,Accuracy,LogRegCCD
+0.6,2000,10,0.3,0.725,Accuracy,LogReg sklearn
+0.7,2000,10,0.3,0.7025,Accuracy,LogRegCCD
+0.7,2000,10,0.3,0.7525,Accuracy,LogReg sklearn
+0.7,2000,10,0.3,0.6675,Accuracy,LogRegCCD
+0.7,2000,10,0.3,0.725,Accuracy,LogReg sklearn
+0.7,2000,10,0.3,0.735,Accuracy,LogRegCCD
+0.7,2000,10,0.3,0.74,Accuracy,LogReg sklearn
+0.7,2000,10,0.3,0.6925,Accuracy,LogRegCCD
+0.7,2000,10,0.3,0.765,Accuracy,LogReg sklearn
+0.7,2000,10,0.3,0.685,Accuracy,LogRegCCD
+0.7,2000,10,0.3,0.7625,Accuracy,LogReg sklearn
+0.8,2000,10,0.3,0.785,Accuracy,LogRegCCD
+0.8,2000,10,0.3,0.8025,Accuracy,LogReg sklearn
+0.8,2000,10,0.3,0.7625,Accuracy,LogRegCCD
+0.8,2000,10,0.3,0.805,Accuracy,LogReg sklearn
+0.8,2000,10,0.3,0.84,Accuracy,LogRegCCD
+0.8,2000,10,0.3,0.8375,Accuracy,LogReg sklearn
+0.8,2000,10,0.3,0.805,Accuracy,LogRegCCD
+0.8,2000,10,0.3,0.83,Accuracy,LogReg sklearn
+0.8,2000,10,0.3,0.785,Accuracy,LogRegCCD
+0.8,2000,10,0.3,0.8175,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.5225,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.7275,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.48,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.7125,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.5125,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.6775,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.4725,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.69,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.49,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.735,Accuracy,LogReg sklearn
+0.5,5000,10,0.3,0.695,Accuracy,LogRegCCD
+0.5,5000,10,0.3,0.721,Accuracy,LogReg sklearn
+0.5,5000,10,0.3,0.682,Accuracy,LogRegCCD
+0.5,5000,10,0.3,0.696,Accuracy,LogReg sklearn
+0.5,5000,10,0.3,0.687,Accuracy,LogRegCCD
+0.5,5000,10,0.3,0.708,Accuracy,LogReg sklearn
+0.5,5000,10,0.3,0.682,Accuracy,LogRegCCD
+0.5,5000,10,0.3,0.706,Accuracy,LogReg sklearn
+0.5,5000,10,0.3,0.691,Accuracy,LogRegCCD
+0.5,5000,10,0.3,0.706,Accuracy,LogReg sklearn
+0.5,10000,10,0.3,0.6895,Accuracy,LogRegCCD
+0.5,10000,10,0.3,0.7045,Accuracy,LogReg sklearn
+0.5,10000,10,0.3,0.6875,Accuracy,LogRegCCD
+0.5,10000,10,0.3,0.6985,Accuracy,LogReg sklearn
+0.5,10000,10,0.3,0.6915,Accuracy,LogRegCCD
+0.5,10000,10,0.3,0.7085,Accuracy,LogReg sklearn
+0.5,10000,10,0.3,0.6985,Accuracy,LogRegCCD
+0.5,10000,10,0.3,0.7175,Accuracy,LogReg sklearn
+0.5,10000,10,0.3,0.693,Accuracy,LogRegCCD
+0.5,10000,10,0.3,0.704,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.5225,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.7275,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.48,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.7125,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.5125,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.6775,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.4725,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.69,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.49,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.735,Accuracy,LogReg sklearn
+0.5,2000,2,0.3,0.5225,Accuracy,LogRegCCD
+0.5,2000,2,0.3,0.6875,Accuracy,LogReg sklearn
+0.5,2000,2,0.3,0.48,Accuracy,LogRegCCD
+0.5,2000,2,0.3,0.6925,Accuracy,LogReg sklearn
+0.5,2000,2,0.3,0.5125,Accuracy,LogRegCCD
+0.5,2000,2,0.3,0.6625,Accuracy,LogReg sklearn
+0.5,2000,2,0.3,0.4725,Accuracy,LogRegCCD
+0.5,2000,2,0.3,0.695,Accuracy,LogReg sklearn
+0.5,2000,2,0.3,0.49,Accuracy,LogRegCCD
+0.5,2000,2,0.3,0.6675,Accuracy,LogReg sklearn
+0.5,2000,4,0.3,0.5225,Accuracy,LogRegCCD
+0.5,2000,4,0.3,0.705,Accuracy,LogReg sklearn
+0.5,2000,4,0.3,0.48,Accuracy,LogRegCCD
+0.5,2000,4,0.3,0.7025,Accuracy,LogReg sklearn
+0.5,2000,4,0.3,0.5125,Accuracy,LogRegCCD
+0.5,2000,4,0.3,0.65,Accuracy,LogReg sklearn
+0.5,2000,4,0.3,0.4725,Accuracy,LogRegCCD
+0.5,2000,4,0.3,0.7,Accuracy,LogReg sklearn
+0.5,2000,4,0.3,0.49,Accuracy,LogRegCCD
+0.5,2000,4,0.3,0.6575,Accuracy,LogReg sklearn
+0.5,2000,6,0.3,0.5225,Accuracy,LogRegCCD
+0.5,2000,6,0.3,0.715,Accuracy,LogReg sklearn
+0.5,2000,6,0.3,0.48,Accuracy,LogRegCCD
+0.5,2000,6,0.3,0.7275,Accuracy,LogReg sklearn
+0.5,2000,6,0.3,0.5125,Accuracy,LogRegCCD
+0.5,2000,6,0.3,0.6875,Accuracy,LogReg sklearn
+0.5,2000,6,0.3,0.4725,Accuracy,LogRegCCD
+0.5,2000,6,0.3,0.685,Accuracy,LogReg sklearn
+0.5,2000,6,0.3,0.49,Accuracy,LogRegCCD
+0.5,2000,6,0.3,0.7175,Accuracy,LogReg sklearn
+0.5,2000,20,0.3,0.5225,Accuracy,LogRegCCD
+0.5,2000,20,0.3,0.73,Accuracy,LogReg sklearn
+0.5,2000,20,0.3,0.48,Accuracy,LogRegCCD
+0.5,2000,20,0.3,0.7275,Accuracy,LogReg sklearn
+0.5,2000,20,0.3,0.5125,Accuracy,LogRegCCD
+0.5,2000,20,0.3,0.72,Accuracy,LogReg sklearn
+0.5,2000,20,0.3,0.4725,Accuracy,LogRegCCD
+0.5,2000,20,0.3,0.7125,Accuracy,LogReg sklearn
+0.5,2000,20,0.3,0.49,Accuracy,LogRegCCD
+0.5,2000,20,0.3,0.6825,Accuracy,LogReg sklearn
+0.5,2000,50,0.3,0.5225,Accuracy,LogRegCCD
+0.5,2000,50,0.3,0.695,Accuracy,LogReg sklearn
+0.5,2000,50,0.3,0.48,Accuracy,LogRegCCD
+0.5,2000,50,0.3,0.6675,Accuracy,LogReg sklearn
+0.5,2000,50,0.3,0.5125,Accuracy,LogRegCCD
+0.5,2000,50,0.3,0.705,Accuracy,LogReg sklearn
+0.5,2000,50,0.3,0.4725,Accuracy,LogRegCCD
+0.5,2000,50,0.3,0.6775,Accuracy,LogReg sklearn
+0.5,2000,50,0.3,0.49,Accuracy,LogRegCCD
+0.5,2000,50,0.3,0.69,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.5225,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.7275,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.48,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.7125,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.5125,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.6775,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.4725,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.69,Accuracy,LogReg sklearn
+0.5,2000,10,0.3,0.49,Accuracy,LogRegCCD
+0.5,2000,10,0.3,0.735,Accuracy,LogReg sklearn
+0.5,2000,10,0.1,0.5225,Accuracy,LogRegCCD
+0.5,2000,10,0.1,0.7225,Accuracy,LogReg sklearn
+0.5,2000,10,0.1,0.48,Accuracy,LogRegCCD
+0.5,2000,10,0.1,0.715,Accuracy,LogReg sklearn
+0.5,2000,10,0.1,0.5125,Accuracy,LogRegCCD
+0.5,2000,10,0.1,0.6875,Accuracy,LogReg sklearn
+0.5,2000,10,0.1,0.4725,Accuracy,LogRegCCD
+0.5,2000,10,0.1,0.6975,Accuracy,LogReg sklearn
+0.5,2000,10,0.1,0.49,Accuracy,LogRegCCD
+0.5,2000,10,0.1,0.755,Accuracy,LogReg sklearn
+0.5,2000,10,0.5,0.5225,Accuracy,LogRegCCD
+0.5,2000,10,0.5,0.685,Accuracy,LogReg sklearn
+0.5,2000,10,0.5,0.48,Accuracy,LogRegCCD
+0.5,2000,10,0.5,0.7,Accuracy,LogReg sklearn
+0.5,2000,10,0.5,0.5125,Accuracy,LogRegCCD
+0.5,2000,10,0.5,0.68,Accuracy,LogReg sklearn
+0.5,2000,10,0.5,0.4725,Accuracy,LogRegCCD
+0.5,2000,10,0.5,0.6875,Accuracy,LogReg sklearn
+0.5,2000,10,0.5,0.49,Accuracy,LogRegCCD
+0.5,2000,10,0.5,0.7225,Accuracy,LogReg sklearn
+0.5,2000,10,0.7,0.5225,Accuracy,LogRegCCD
+0.5,2000,10,0.7,0.7,Accuracy,LogReg sklearn
+0.5,2000,10,0.7,0.48,Accuracy,LogRegCCD
+0.5,2000,10,0.7,0.6925,Accuracy,LogReg sklearn
+0.5,2000,10,0.7,0.5125,Accuracy,LogRegCCD
+0.5,2000,10,0.7,0.685,Accuracy,LogReg sklearn
+0.5,2000,10,0.7,0.4725,Accuracy,LogRegCCD
+0.5,2000,10,0.7,0.7125,Accuracy,LogReg sklearn
+0.5,2000,10,0.7,0.49,Accuracy,LogRegCCD
+0.5,2000,10,0.7,0.71,Accuracy,LogReg sklearn
+0.5,2000,10,0.9,0.5225,Accuracy,LogRegCCD
+0.5,2000,10,0.9,0.7625,Accuracy,LogReg sklearn
+0.5,2000,10,0.9,0.48,Accuracy,LogRegCCD
+0.5,2000,10,0.9,0.75,Accuracy,LogReg sklearn
+0.5,2000,10,0.9,0.5125,Accuracy,LogRegCCD
+0.5,2000,10,0.9,0.7375,Accuracy,LogReg sklearn
+0.5,2000,10,0.9,0.4725,Accuracy,LogRegCCD
+0.5,2000,10,0.9,0.735,Accuracy,LogReg sklearn
+0.5,2000,10,0.9,0.49,Accuracy,LogRegCCD
+0.5,2000,10,0.9,0.75,Accuracy,LogReg sklearn
