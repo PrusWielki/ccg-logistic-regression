@@ -1,201 +1,1001 @@
-p,n,d,g,metric_value,metric_name,model
-0.5,2000,10,0.3,0.5225,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.7275,Accuracy,LogReg sklearn
-0.5,2000,10,0.3,0.48,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.7125,Accuracy,LogReg sklearn
-0.5,2000,10,0.3,0.5125,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.6775,Accuracy,LogReg sklearn
-0.5,2000,10,0.3,0.4725,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.69,Accuracy,LogReg sklearn
-0.5,2000,10,0.3,0.49,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.735,Accuracy,LogReg sklearn
-0.3,2000,10,0.3,0.7025,Accuracy,LogRegCCD
-0.3,2000,10,0.3,0.7575,Accuracy,LogReg sklearn
-0.3,2000,10,0.3,0.6675,Accuracy,LogRegCCD
-0.3,2000,10,0.3,0.7675,Accuracy,LogReg sklearn
-0.3,2000,10,0.3,0.735,Accuracy,LogRegCCD
-0.3,2000,10,0.3,0.7875,Accuracy,LogReg sklearn
-0.3,2000,10,0.3,0.6925,Accuracy,LogRegCCD
-0.3,2000,10,0.3,0.75,Accuracy,LogReg sklearn
-0.3,2000,10,0.3,0.685,Accuracy,LogRegCCD
-0.3,2000,10,0.3,0.74,Accuracy,LogReg sklearn
-0.4,2000,10,0.3,0.58,Accuracy,LogRegCCD
-0.4,2000,10,0.3,0.72,Accuracy,LogReg sklearn
-0.4,2000,10,0.3,0.5875,Accuracy,LogRegCCD
-0.4,2000,10,0.3,0.77,Accuracy,LogReg sklearn
-0.4,2000,10,0.3,0.6225,Accuracy,LogRegCCD
-0.4,2000,10,0.3,0.73,Accuracy,LogReg sklearn
-0.4,2000,10,0.3,0.585,Accuracy,LogRegCCD
-0.4,2000,10,0.3,0.6875,Accuracy,LogReg sklearn
-0.4,2000,10,0.3,0.6025,Accuracy,LogRegCCD
-0.4,2000,10,0.3,0.715,Accuracy,LogReg sklearn
-0.6,2000,10,0.3,0.58,Accuracy,LogRegCCD
-0.6,2000,10,0.3,0.715,Accuracy,LogReg sklearn
-0.6,2000,10,0.3,0.5875,Accuracy,LogRegCCD
-0.6,2000,10,0.3,0.745,Accuracy,LogReg sklearn
-0.6,2000,10,0.3,0.6225,Accuracy,LogRegCCD
-0.6,2000,10,0.3,0.75,Accuracy,LogReg sklearn
-0.6,2000,10,0.3,0.585,Accuracy,LogRegCCD
-0.6,2000,10,0.3,0.695,Accuracy,LogReg sklearn
-0.6,2000,10,0.3,0.6025,Accuracy,LogRegCCD
-0.6,2000,10,0.3,0.725,Accuracy,LogReg sklearn
-0.7,2000,10,0.3,0.7025,Accuracy,LogRegCCD
-0.7,2000,10,0.3,0.7525,Accuracy,LogReg sklearn
-0.7,2000,10,0.3,0.6675,Accuracy,LogRegCCD
-0.7,2000,10,0.3,0.725,Accuracy,LogReg sklearn
-0.7,2000,10,0.3,0.735,Accuracy,LogRegCCD
-0.7,2000,10,0.3,0.74,Accuracy,LogReg sklearn
-0.7,2000,10,0.3,0.6925,Accuracy,LogRegCCD
-0.7,2000,10,0.3,0.765,Accuracy,LogReg sklearn
-0.7,2000,10,0.3,0.685,Accuracy,LogRegCCD
-0.7,2000,10,0.3,0.7625,Accuracy,LogReg sklearn
-0.8,2000,10,0.3,0.785,Accuracy,LogRegCCD
-0.8,2000,10,0.3,0.8025,Accuracy,LogReg sklearn
-0.8,2000,10,0.3,0.7625,Accuracy,LogRegCCD
-0.8,2000,10,0.3,0.805,Accuracy,LogReg sklearn
-0.8,2000,10,0.3,0.84,Accuracy,LogRegCCD
-0.8,2000,10,0.3,0.8375,Accuracy,LogReg sklearn
-0.8,2000,10,0.3,0.805,Accuracy,LogRegCCD
-0.8,2000,10,0.3,0.83,Accuracy,LogReg sklearn
-0.8,2000,10,0.3,0.785,Accuracy,LogRegCCD
-0.8,2000,10,0.3,0.8175,Accuracy,LogReg sklearn
-0.5,2000,10,0.3,0.5225,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.7275,Accuracy,LogReg sklearn
-0.5,2000,10,0.3,0.48,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.7125,Accuracy,LogReg sklearn
-0.5,2000,10,0.3,0.5125,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.6775,Accuracy,LogReg sklearn
-0.5,2000,10,0.3,0.4725,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.69,Accuracy,LogReg sklearn
-0.5,2000,10,0.3,0.49,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.735,Accuracy,LogReg sklearn
-0.5,5000,10,0.3,0.695,Accuracy,LogRegCCD
-0.5,5000,10,0.3,0.721,Accuracy,LogReg sklearn
-0.5,5000,10,0.3,0.682,Accuracy,LogRegCCD
-0.5,5000,10,0.3,0.696,Accuracy,LogReg sklearn
-0.5,5000,10,0.3,0.687,Accuracy,LogRegCCD
-0.5,5000,10,0.3,0.708,Accuracy,LogReg sklearn
-0.5,5000,10,0.3,0.682,Accuracy,LogRegCCD
-0.5,5000,10,0.3,0.706,Accuracy,LogReg sklearn
-0.5,5000,10,0.3,0.691,Accuracy,LogRegCCD
-0.5,5000,10,0.3,0.706,Accuracy,LogReg sklearn
-0.5,10000,10,0.3,0.6895,Accuracy,LogRegCCD
-0.5,10000,10,0.3,0.7045,Accuracy,LogReg sklearn
-0.5,10000,10,0.3,0.6875,Accuracy,LogRegCCD
-0.5,10000,10,0.3,0.6985,Accuracy,LogReg sklearn
-0.5,10000,10,0.3,0.6915,Accuracy,LogRegCCD
-0.5,10000,10,0.3,0.7085,Accuracy,LogReg sklearn
-0.5,10000,10,0.3,0.6985,Accuracy,LogRegCCD
-0.5,10000,10,0.3,0.7175,Accuracy,LogReg sklearn
-0.5,10000,10,0.3,0.693,Accuracy,LogRegCCD
-0.5,10000,10,0.3,0.704,Accuracy,LogReg sklearn
-0.5,2000,10,0.3,0.5225,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.7275,Accuracy,LogReg sklearn
-0.5,2000,10,0.3,0.48,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.7125,Accuracy,LogReg sklearn
-0.5,2000,10,0.3,0.5125,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.6775,Accuracy,LogReg sklearn
-0.5,2000,10,0.3,0.4725,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.69,Accuracy,LogReg sklearn
-0.5,2000,10,0.3,0.49,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.735,Accuracy,LogReg sklearn
-0.5,2000,2,0.3,0.5225,Accuracy,LogRegCCD
-0.5,2000,2,0.3,0.6875,Accuracy,LogReg sklearn
-0.5,2000,2,0.3,0.48,Accuracy,LogRegCCD
-0.5,2000,2,0.3,0.6925,Accuracy,LogReg sklearn
-0.5,2000,2,0.3,0.5125,Accuracy,LogRegCCD
-0.5,2000,2,0.3,0.6625,Accuracy,LogReg sklearn
-0.5,2000,2,0.3,0.4725,Accuracy,LogRegCCD
-0.5,2000,2,0.3,0.695,Accuracy,LogReg sklearn
-0.5,2000,2,0.3,0.49,Accuracy,LogRegCCD
-0.5,2000,2,0.3,0.6675,Accuracy,LogReg sklearn
-0.5,2000,4,0.3,0.5225,Accuracy,LogRegCCD
-0.5,2000,4,0.3,0.705,Accuracy,LogReg sklearn
-0.5,2000,4,0.3,0.48,Accuracy,LogRegCCD
-0.5,2000,4,0.3,0.7025,Accuracy,LogReg sklearn
-0.5,2000,4,0.3,0.5125,Accuracy,LogRegCCD
-0.5,2000,4,0.3,0.65,Accuracy,LogReg sklearn
-0.5,2000,4,0.3,0.4725,Accuracy,LogRegCCD
-0.5,2000,4,0.3,0.7,Accuracy,LogReg sklearn
-0.5,2000,4,0.3,0.49,Accuracy,LogRegCCD
-0.5,2000,4,0.3,0.6575,Accuracy,LogReg sklearn
-0.5,2000,6,0.3,0.5225,Accuracy,LogRegCCD
-0.5,2000,6,0.3,0.715,Accuracy,LogReg sklearn
-0.5,2000,6,0.3,0.48,Accuracy,LogRegCCD
-0.5,2000,6,0.3,0.7275,Accuracy,LogReg sklearn
-0.5,2000,6,0.3,0.5125,Accuracy,LogRegCCD
-0.5,2000,6,0.3,0.6875,Accuracy,LogReg sklearn
-0.5,2000,6,0.3,0.4725,Accuracy,LogRegCCD
-0.5,2000,6,0.3,0.685,Accuracy,LogReg sklearn
-0.5,2000,6,0.3,0.49,Accuracy,LogRegCCD
-0.5,2000,6,0.3,0.7175,Accuracy,LogReg sklearn
-0.5,2000,20,0.3,0.5225,Accuracy,LogRegCCD
-0.5,2000,20,0.3,0.73,Accuracy,LogReg sklearn
-0.5,2000,20,0.3,0.48,Accuracy,LogRegCCD
-0.5,2000,20,0.3,0.7275,Accuracy,LogReg sklearn
-0.5,2000,20,0.3,0.5125,Accuracy,LogRegCCD
-0.5,2000,20,0.3,0.72,Accuracy,LogReg sklearn
-0.5,2000,20,0.3,0.4725,Accuracy,LogRegCCD
-0.5,2000,20,0.3,0.7125,Accuracy,LogReg sklearn
-0.5,2000,20,0.3,0.49,Accuracy,LogRegCCD
-0.5,2000,20,0.3,0.6825,Accuracy,LogReg sklearn
-0.5,2000,50,0.3,0.5225,Accuracy,LogRegCCD
-0.5,2000,50,0.3,0.695,Accuracy,LogReg sklearn
-0.5,2000,50,0.3,0.48,Accuracy,LogRegCCD
-0.5,2000,50,0.3,0.6675,Accuracy,LogReg sklearn
-0.5,2000,50,0.3,0.5125,Accuracy,LogRegCCD
-0.5,2000,50,0.3,0.705,Accuracy,LogReg sklearn
-0.5,2000,50,0.3,0.4725,Accuracy,LogRegCCD
-0.5,2000,50,0.3,0.6775,Accuracy,LogReg sklearn
-0.5,2000,50,0.3,0.49,Accuracy,LogRegCCD
-0.5,2000,50,0.3,0.69,Accuracy,LogReg sklearn
-0.5,2000,10,0.3,0.5225,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.7275,Accuracy,LogReg sklearn
-0.5,2000,10,0.3,0.48,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.7125,Accuracy,LogReg sklearn
-0.5,2000,10,0.3,0.5125,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.6775,Accuracy,LogReg sklearn
-0.5,2000,10,0.3,0.4725,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.69,Accuracy,LogReg sklearn
-0.5,2000,10,0.3,0.49,Accuracy,LogRegCCD
-0.5,2000,10,0.3,0.735,Accuracy,LogReg sklearn
-0.5,2000,10,0.1,0.5225,Accuracy,LogRegCCD
-0.5,2000,10,0.1,0.7225,Accuracy,LogReg sklearn
-0.5,2000,10,0.1,0.48,Accuracy,LogRegCCD
-0.5,2000,10,0.1,0.715,Accuracy,LogReg sklearn
-0.5,2000,10,0.1,0.5125,Accuracy,LogRegCCD
-0.5,2000,10,0.1,0.6875,Accuracy,LogReg sklearn
-0.5,2000,10,0.1,0.4725,Accuracy,LogRegCCD
-0.5,2000,10,0.1,0.6975,Accuracy,LogReg sklearn
-0.5,2000,10,0.1,0.49,Accuracy,LogRegCCD
-0.5,2000,10,0.1,0.755,Accuracy,LogReg sklearn
-0.5,2000,10,0.5,0.5225,Accuracy,LogRegCCD
-0.5,2000,10,0.5,0.685,Accuracy,LogReg sklearn
-0.5,2000,10,0.5,0.48,Accuracy,LogRegCCD
-0.5,2000,10,0.5,0.7,Accuracy,LogReg sklearn
-0.5,2000,10,0.5,0.5125,Accuracy,LogRegCCD
-0.5,2000,10,0.5,0.68,Accuracy,LogReg sklearn
-0.5,2000,10,0.5,0.4725,Accuracy,LogRegCCD
-0.5,2000,10,0.5,0.6875,Accuracy,LogReg sklearn
-0.5,2000,10,0.5,0.49,Accuracy,LogRegCCD
-0.5,2000,10,0.5,0.7225,Accuracy,LogReg sklearn
-0.5,2000,10,0.7,0.5225,Accuracy,LogRegCCD
-0.5,2000,10,0.7,0.7,Accuracy,LogReg sklearn
-0.5,2000,10,0.7,0.48,Accuracy,LogRegCCD
-0.5,2000,10,0.7,0.6925,Accuracy,LogReg sklearn
-0.5,2000,10,0.7,0.5125,Accuracy,LogRegCCD
-0.5,2000,10,0.7,0.685,Accuracy,LogReg sklearn
-0.5,2000,10,0.7,0.4725,Accuracy,LogRegCCD
-0.5,2000,10,0.7,0.7125,Accuracy,LogReg sklearn
-0.5,2000,10,0.7,0.49,Accuracy,LogRegCCD
-0.5,2000,10,0.7,0.71,Accuracy,LogReg sklearn
-0.5,2000,10,0.9,0.5225,Accuracy,LogRegCCD
-0.5,2000,10,0.9,0.7625,Accuracy,LogReg sklearn
-0.5,2000,10,0.9,0.48,Accuracy,LogRegCCD
-0.5,2000,10,0.9,0.75,Accuracy,LogReg sklearn
-0.5,2000,10,0.9,0.5125,Accuracy,LogRegCCD
-0.5,2000,10,0.9,0.7375,Accuracy,LogReg sklearn
-0.5,2000,10,0.9,0.4725,Accuracy,LogRegCCD
-0.5,2000,10,0.9,0.735,Accuracy,LogReg sklearn
-0.5,2000,10,0.9,0.49,Accuracy,LogRegCCD
-0.5,2000,10,0.9,0.75,Accuracy,LogReg sklearn
+p,n,d,g,metric_value,metric_name,model,seed
+0.5,2000,10,0.3,0.735,accuracy_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7417840375586855,precision_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7559808612440191,recall_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7488151658767772,f1_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7340113730303864,roc_auc_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7275,accuracy_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.75,precision_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.7177033492822966,recall_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.7334963325183375,f1_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.7279616222851274,roc_auc_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.71,accuracy_score,LogRegCCD,52
+0.5,2000,10,0.3,0.7,precision_score,LogRegCCD,52
+0.5,2000,10,0.3,0.6927083333333334,recall_score,LogRegCCD,52
+0.5,2000,10,0.3,0.6963350785340314,f1_score,LogRegCCD,52
+0.5,2000,10,0.3,0.709334935897436,roc_auc_score,LogRegCCD,52
+0.5,2000,10,0.3,0.7125,accuracy_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.7037037037037037,precision_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.6927083333333334,recall_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.6981627296587927,f1_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.7117387820512822,roc_auc_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.6875,accuracy_score,LogRegCCD,62
+0.5,2000,10,0.3,0.6869158878504673,precision_score,LogRegCCD,62
+0.5,2000,10,0.3,0.7170731707317073,recall_score,LogRegCCD,62
+0.5,2000,10,0.3,0.7016706443914081,f1_score,LogRegCCD,62
+0.5,2000,10,0.3,0.6867417135709819,roc_auc_score,LogRegCCD,62
+0.5,2000,10,0.3,0.6775,accuracy_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.6844660194174758,precision_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.6878048780487804,recall_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.6861313868613139,f1_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.6772357723577236,roc_auc_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.665,accuracy_score,LogRegCCD,72
+0.5,2000,10,0.3,0.6824644549763034,precision_score,LogRegCCD,72
+0.5,2000,10,0.3,0.6824644549763034,recall_score,LogRegCCD,72
+0.5,2000,10,0.3,0.6824644549763034,f1_score,LogRegCCD,72
+0.5,2000,10,0.3,0.6639835502394744,roc_auc_score,LogRegCCD,72
+0.5,2000,10,0.3,0.69,accuracy_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.704225352112676,precision_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.7109004739336493,recall_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.7075471698113207,f1_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.688783570300158,roc_auc_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.7,accuracy_score,LogRegCCD,82
+0.5,2000,10,0.3,0.7,precision_score,LogRegCCD,82
+0.5,2000,10,0.3,0.7205882352941176,recall_score,LogRegCCD,82
+0.5,2000,10,0.3,0.7101449275362319,f1_score,LogRegCCD,82
+0.5,2000,10,0.3,0.6995798319327732,roc_auc_score,LogRegCCD,82
+0.5,2000,10,0.3,0.735,accuracy_score,LogReg sklearn,82
+0.5,2000,10,0.3,0.7401960784313726,precision_score,LogReg sklearn,82
+0.5,2000,10,0.3,0.7401960784313726,recall_score,LogReg sklearn,82
+0.5,2000,10,0.3,0.7401960784313726,f1_score,LogReg sklearn,82
+0.5,2000,10,0.3,0.7348939575830332,roc_auc_score,LogReg sklearn,82
+0.3,2000,10,0.3,0.74,accuracy_score,LogRegCCD,42
+0.3,2000,10,0.3,0.6595744680851063,precision_score,LogRegCCD,42
+0.3,2000,10,0.3,0.2605042016806723,recall_score,LogRegCCD,42
+0.3,2000,10,0.3,0.37349397590361444,f1_score,LogRegCCD,42
+0.3,2000,10,0.3,0.6017823499506564,roc_auc_score,LogRegCCD,42
+0.3,2000,10,0.3,0.7575,accuracy_score,LogReg sklearn,42
+0.3,2000,10,0.3,0.6571428571428571,precision_score,LogReg sklearn,42
+0.3,2000,10,0.3,0.3865546218487395,recall_score,LogReg sklearn,42
+0.3,2000,10,0.3,0.48677248677248675,f1_score,LogReg sklearn,42
+0.3,2000,10,0.3,0.6505726845898502,roc_auc_score,LogReg sklearn,42
+0.3,2000,10,0.3,0.7525,accuracy_score,LogRegCCD,52
+0.3,2000,10,0.3,0.7545454545454545,precision_score,LogRegCCD,52
+0.3,2000,10,0.3,0.9325842696629213,recall_score,LogRegCCD,52
+0.3,2000,10,0.3,0.8341708542713567,f1_score,LogRegCCD,52
+0.3,2000,10,0.3,0.661780856635972,roc_auc_score,LogRegCCD,52
+0.3,2000,10,0.3,0.7675,accuracy_score,LogReg sklearn,52
+0.3,2000,10,0.3,0.7861842105263158,precision_score,LogReg sklearn,52
+0.3,2000,10,0.3,0.8951310861423221,recall_score,LogReg sklearn,52
+0.3,2000,10,0.3,0.8371278458844134,f1_score,LogReg sklearn,52
+0.3,2000,10,0.3,0.7032046408155219,roc_auc_score,LogReg sklearn,52
+0.3,2000,10,0.3,0.78,accuracy_score,LogRegCCD,62
+0.3,2000,10,0.3,0.6730769230769231,precision_score,LogRegCCD,62
+0.3,2000,10,0.3,0.330188679245283,recall_score,LogRegCCD,62
+0.3,2000,10,0.3,0.4430379746835443,f1_score,LogRegCCD,62
+0.3,2000,10,0.3,0.6361827749967912,roc_auc_score,LogRegCCD,62
+0.3,2000,10,0.3,0.7875,accuracy_score,LogReg sklearn,62
+0.3,2000,10,0.3,0.6265060240963856,precision_score,LogReg sklearn,62
+0.3,2000,10,0.3,0.49056603773584906,recall_score,LogReg sklearn,62
+0.3,2000,10,0.3,0.5502645502645502,f1_score,LogReg sklearn,62
+0.3,2000,10,0.3,0.6925619304325503,roc_auc_score,LogReg sklearn,62
+0.3,2000,10,0.3,0.7325,accuracy_score,LogRegCCD,72
+0.3,2000,10,0.3,0.75,precision_score,LogRegCCD,72
+0.3,2000,10,0.3,0.1951219512195122,recall_score,LogRegCCD,72
+0.3,2000,10,0.3,0.3096774193548387,f1_score,LogRegCCD,72
+0.3,2000,10,0.3,0.5831205423967597,roc_auc_score,LogRegCCD,72
+0.3,2000,10,0.3,0.75,accuracy_score,LogReg sklearn,72
+0.3,2000,10,0.3,0.6619718309859155,precision_score,LogReg sklearn,72
+0.3,2000,10,0.3,0.3821138211382114,recall_score,LogReg sklearn,72
+0.3,2000,10,0.3,0.4845360824742268,f1_score,LogReg sklearn,72
+0.3,2000,10,0.3,0.6477356109301166,roc_auc_score,LogReg sklearn,72
+0.3,2000,10,0.3,0.7125,accuracy_score,LogRegCCD,82
+0.3,2000,10,0.3,0.627906976744186,precision_score,LogRegCCD,82
+0.3,2000,10,0.3,0.21428571428571427,recall_score,LogRegCCD,82
+0.3,2000,10,0.3,0.31952662721893493,f1_score,LogRegCCD,82
+0.3,2000,10,0.3,0.5779457768508862,roc_auc_score,LogRegCCD,82
+0.3,2000,10,0.3,0.74,accuracy_score,LogReg sklearn,82
+0.3,2000,10,0.3,0.6617647058823529,precision_score,LogReg sklearn,82
+0.3,2000,10,0.3,0.35714285714285715,recall_score,LogReg sklearn,82
+0.3,2000,10,0.3,0.4639175257731959,f1_score,LogReg sklearn,82
+0.3,2000,10,0.3,0.6366006256517206,roc_auc_score,LogReg sklearn,82
+0.4,2000,10,0.3,0.7225,accuracy_score,LogRegCCD,42
+0.4,2000,10,0.3,0.7050359712230215,precision_score,LogRegCCD,42
+0.4,2000,10,0.3,0.5833333333333334,recall_score,LogRegCCD,42
+0.4,2000,10,0.3,0.6384364820846905,f1_score,LogRegCCD,42
+0.4,2000,10,0.3,0.7033045977011495,roc_auc_score,LogRegCCD,42
+0.4,2000,10,0.3,0.72,accuracy_score,LogReg sklearn,42
+0.4,2000,10,0.3,0.6866666666666666,precision_score,LogReg sklearn,42
+0.4,2000,10,0.3,0.6130952380952381,recall_score,LogReg sklearn,42
+0.4,2000,10,0.3,0.6477987421383647,f1_score,LogReg sklearn,42
+0.4,2000,10,0.3,0.7052545155993433,roc_auc_score,LogReg sklearn,42
+0.4,2000,10,0.3,0.7625,accuracy_score,LogRegCCD,52
+0.4,2000,10,0.3,0.7692307692307693,precision_score,LogRegCCD,52
+0.4,2000,10,0.3,0.851063829787234,recall_score,LogRegCCD,52
+0.4,2000,10,0.3,0.8080808080808081,f1_score,LogRegCCD,52
+0.4,2000,10,0.3,0.7437137330754352,roc_auc_score,LogRegCCD,52
+0.4,2000,10,0.3,0.77,accuracy_score,LogReg sklearn,52
+0.4,2000,10,0.3,0.782608695652174,precision_score,LogReg sklearn,52
+0.4,2000,10,0.3,0.8425531914893617,recall_score,LogReg sklearn,52
+0.4,2000,10,0.3,0.8114754098360656,f1_score,LogReg sklearn,52
+0.4,2000,10,0.3,0.7546099290780143,roc_auc_score,LogReg sklearn,52
+0.4,2000,10,0.3,0.74,accuracy_score,LogRegCCD,62
+0.4,2000,10,0.3,0.6715328467153284,precision_score,LogRegCCD,62
+0.4,2000,10,0.3,0.609271523178808,recall_score,LogRegCCD,62
+0.4,2000,10,0.3,0.6388888888888888,f1_score,LogRegCCD,62
+0.4,2000,10,0.3,0.7142743158062714,roc_auc_score,LogRegCCD,62
+0.4,2000,10,0.3,0.73,accuracy_score,LogReg sklearn,62
+0.4,2000,10,0.3,0.6442953020134228,precision_score,LogReg sklearn,62
+0.4,2000,10,0.3,0.6357615894039735,recall_score,LogReg sklearn,62
+0.4,2000,10,0.3,0.64,f1_score,LogReg sklearn,62
+0.4,2000,10,0.3,0.7114550918907419,roc_auc_score,LogReg sklearn,62
+0.4,2000,10,0.3,0.6575,accuracy_score,LogRegCCD,72
+0.4,2000,10,0.3,0.6260869565217392,precision_score,LogRegCCD,72
+0.4,2000,10,0.3,0.43373493975903615,recall_score,LogRegCCD,72
+0.4,2000,10,0.3,0.5124555160142349,f1_score,LogRegCCD,72
+0.4,2000,10,0.3,0.6249871279991762,roc_auc_score,LogRegCCD,72
+0.4,2000,10,0.3,0.6875,accuracy_score,LogReg sklearn,72
+0.4,2000,10,0.3,0.6474820143884892,precision_score,LogReg sklearn,72
+0.4,2000,10,0.3,0.5421686746987951,recall_score,LogReg sklearn,72
+0.4,2000,10,0.3,0.5901639344262295,f1_score,LogReg sklearn,72
+0.4,2000,10,0.3,0.6663834826485429,roc_auc_score,LogReg sklearn,72
+0.4,2000,10,0.3,0.695,accuracy_score,LogRegCCD,82
+0.4,2000,10,0.3,0.6728971962616822,precision_score,LogRegCCD,82
+0.4,2000,10,0.3,0.4528301886792453,recall_score,LogRegCCD,82
+0.4,2000,10,0.3,0.5413533834586466,f1_score,LogRegCCD,82
+0.4,2000,10,0.3,0.6538009864558052,roc_auc_score,LogRegCCD,82
+0.4,2000,10,0.3,0.715,accuracy_score,LogReg sklearn,82
+0.4,2000,10,0.3,0.68,precision_score,LogReg sklearn,82
+0.4,2000,10,0.3,0.5345911949685535,recall_score,LogReg sklearn,82
+0.4,2000,10,0.3,0.5985915492957746,f1_score,LogReg sklearn,82
+0.4,2000,10,0.3,0.6843080456170568,roc_auc_score,LogReg sklearn,82
+0.6,2000,10,0.3,0.7425,accuracy_score,LogRegCCD,42
+0.6,2000,10,0.3,0.7642276422764228,precision_score,LogRegCCD,42
+0.6,2000,10,0.3,0.5595238095238095,recall_score,LogRegCCD,42
+0.6,2000,10,0.3,0.6460481099656358,f1_score,LogRegCCD,42
+0.6,2000,10,0.3,0.7172619047619048,roc_auc_score,LogRegCCD,42
+0.6,2000,10,0.3,0.715,accuracy_score,LogReg sklearn,42
+0.6,2000,10,0.3,0.7142857142857143,precision_score,LogReg sklearn,42
+0.6,2000,10,0.3,0.5357142857142857,recall_score,LogReg sklearn,42
+0.6,2000,10,0.3,0.6122448979591837,f1_score,LogReg sklearn,42
+0.6,2000,10,0.3,0.6902709359605911,roc_auc_score,LogReg sklearn,42
+0.6,2000,10,0.3,0.73,accuracy_score,LogRegCCD,52
+0.6,2000,10,0.3,0.7197231833910035,precision_score,LogRegCCD,52
+0.6,2000,10,0.3,0.8851063829787233,recall_score,LogRegCCD,52
+0.6,2000,10,0.3,0.7938931297709924,f1_score,LogRegCCD,52
+0.6,2000,10,0.3,0.6970986460348162,roc_auc_score,LogRegCCD,52
+0.6,2000,10,0.3,0.745,accuracy_score,LogReg sklearn,52
+0.6,2000,10,0.3,0.7418181818181818,precision_score,LogReg sklearn,52
+0.6,2000,10,0.3,0.8680851063829788,recall_score,LogReg sklearn,52
+0.6,2000,10,0.3,0.8,f1_score,LogReg sklearn,52
+0.6,2000,10,0.3,0.7188910380399742,roc_auc_score,LogReg sklearn,52
+0.6,2000,10,0.3,0.75,accuracy_score,LogRegCCD,62
+0.6,2000,10,0.3,0.7142857142857143,precision_score,LogRegCCD,62
+0.6,2000,10,0.3,0.5629139072847682,recall_score,LogRegCCD,62
+0.6,2000,10,0.3,0.6296296296296297,f1_score,LogRegCCD,62
+0.6,2000,10,0.3,0.7131838612729061,roc_auc_score,LogRegCCD,62
+0.6,2000,10,0.3,0.75,accuracy_score,LogReg sklearn,62
+0.6,2000,10,0.3,0.6976744186046512,precision_score,LogReg sklearn,62
+0.6,2000,10,0.3,0.5960264900662252,recall_score,LogReg sklearn,62
+0.6,2000,10,0.3,0.6428571428571429,f1_score,LogReg sklearn,62
+0.6,2000,10,0.3,0.7196999920210644,roc_auc_score,LogReg sklearn,62
+0.6,2000,10,0.3,0.69,accuracy_score,LogRegCCD,72
+0.6,2000,10,0.3,0.6693548387096774,precision_score,LogRegCCD,72
+0.6,2000,10,0.3,0.5,recall_score,LogRegCCD,72
+0.6,2000,10,0.3,0.5724137931034483,f1_score,LogRegCCD,72
+0.6,2000,10,0.3,0.6623931623931624,roc_auc_score,LogRegCCD,72
+0.6,2000,10,0.3,0.695,accuracy_score,LogReg sklearn,72
+0.6,2000,10,0.3,0.6571428571428571,precision_score,LogReg sklearn,72
+0.6,2000,10,0.3,0.5542168674698795,recall_score,LogReg sklearn,72
+0.6,2000,10,0.3,0.6013071895424836,f1_score,LogReg sklearn,72
+0.6,2000,10,0.3,0.6745443311708372,roc_auc_score,LogReg sklearn,72
+0.6,2000,10,0.3,0.7175,accuracy_score,LogRegCCD,82
+0.6,2000,10,0.3,0.6885245901639344,precision_score,LogRegCCD,82
+0.6,2000,10,0.3,0.5283018867924528,recall_score,LogRegCCD,82
+0.6,2000,10,0.3,0.597864768683274,f1_score,LogRegCCD,82
+0.6,2000,10,0.3,0.6853127691223675,roc_auc_score,LogRegCCD,82
+0.6,2000,10,0.3,0.725,accuracy_score,LogReg sklearn,82
+0.6,2000,10,0.3,0.6737588652482269,precision_score,LogReg sklearn,82
+0.6,2000,10,0.3,0.5974842767295597,recall_score,LogReg sklearn,82
+0.6,2000,10,0.3,0.6333333333333333,f1_score,LogReg sklearn,82
+0.6,2000,10,0.3,0.703306453717477,roc_auc_score,LogReg sklearn,82
+0.7,2000,10,0.3,0.74,accuracy_score,LogRegCCD,42
+0.7,2000,10,0.3,0.6190476190476191,precision_score,LogRegCCD,42
+0.7,2000,10,0.3,0.3277310924369748,recall_score,LogRegCCD,42
+0.7,2000,10,0.3,0.42857142857142855,f1_score,LogRegCCD,42
+0.7,2000,10,0.3,0.6211609198839678,roc_auc_score,LogRegCCD,42
+0.7,2000,10,0.3,0.7525,accuracy_score,LogReg sklearn,42
+0.7,2000,10,0.3,0.6086956521739131,precision_score,LogReg sklearn,42
+0.7,2000,10,0.3,0.47058823529411764,recall_score,LogReg sklearn,42
+0.7,2000,10,0.3,0.5308056872037915,f1_score,LogReg sklearn,42
+0.7,2000,10,0.3,0.6712371781452795,roc_auc_score,LogReg sklearn,42
+0.7,2000,10,0.3,0.71,accuracy_score,LogRegCCD,52
+0.7,2000,10,0.3,0.7227138643067846,precision_score,LogRegCCD,52
+0.7,2000,10,0.3,0.9176029962546817,recall_score,LogRegCCD,52
+0.7,2000,10,0.3,0.8085808580858086,f1_score,LogRegCCD,52
+0.7,2000,10,0.3,0.6054180394807243,roc_auc_score,LogRegCCD,52
+0.7,2000,10,0.3,0.725,accuracy_score,LogReg sklearn,52
+0.7,2000,10,0.3,0.7460815047021944,precision_score,LogReg sklearn,52
+0.7,2000,10,0.3,0.8913857677902621,recall_score,LogReg sklearn,52
+0.7,2000,10,0.3,0.8122866894197952,f1_score,LogReg sklearn,52
+0.7,2000,10,0.3,0.6411816056996423,roc_auc_score,LogReg sklearn,52
+0.7,2000,10,0.3,0.7475,accuracy_score,LogRegCCD,62
+0.7,2000,10,0.3,0.5373134328358209,precision_score,LogRegCCD,62
+0.7,2000,10,0.3,0.33962264150943394,recall_score,LogRegCCD,62
+0.7,2000,10,0.3,0.4161849710982659,f1_score,LogRegCCD,62
+0.7,2000,10,0.3,0.6170902323193428,roc_auc_score,LogRegCCD,62
+0.7,2000,10,0.3,0.74,accuracy_score,LogReg sklearn,62
+0.7,2000,10,0.3,0.5111111111111111,precision_score,LogReg sklearn,62
+0.7,2000,10,0.3,0.4339622641509434,recall_score,LogReg sklearn,62
+0.7,2000,10,0.3,0.46938775510204084,f1_score,LogReg sklearn,62
+0.7,2000,10,0.3,0.6421512001026827,roc_auc_score,LogReg sklearn,62
+0.7,2000,10,0.3,0.7325,accuracy_score,LogRegCCD,72
+0.7,2000,10,0.3,0.6904761904761905,precision_score,LogRegCCD,72
+0.7,2000,10,0.3,0.23577235772357724,recall_score,LogRegCCD,72
+0.7,2000,10,0.3,0.3515151515151515,f1_score,LogRegCCD,72
+0.7,2000,10,0.3,0.5944204748906695,roc_auc_score,LogRegCCD,72
+0.7,2000,10,0.3,0.765,accuracy_score,LogReg sklearn,72
+0.7,2000,10,0.3,0.6933333333333334,precision_score,LogReg sklearn,72
+0.7,2000,10,0.3,0.42276422764227645,recall_score,LogReg sklearn,72
+0.7,2000,10,0.3,0.5252525252525253,f1_score,LogReg sklearn,72
+0.7,2000,10,0.3,0.6698658683337736,roc_auc_score,LogReg sklearn,72
+0.7,2000,10,0.3,0.7625,accuracy_score,LogRegCCD,82
+0.7,2000,10,0.3,0.803921568627451,precision_score,LogRegCCD,82
+0.7,2000,10,0.3,0.3253968253968254,recall_score,LogRegCCD,82
+0.7,2000,10,0.3,0.4632768361581921,f1_score,LogRegCCD,82
+0.7,2000,10,0.3,0.6444502375159309,roc_auc_score,LogRegCCD,82
+0.7,2000,10,0.3,0.7625,accuracy_score,LogReg sklearn,82
+0.7,2000,10,0.3,0.691358024691358,precision_score,LogReg sklearn,82
+0.7,2000,10,0.3,0.4444444444444444,recall_score,LogReg sklearn,82
+0.7,2000,10,0.3,0.5410628019323671,f1_score,LogReg sklearn,82
+0.7,2000,10,0.3,0.6766017842660178,roc_auc_score,LogReg sklearn,82
+0.8,2000,10,0.3,0.8,accuracy_score,LogRegCCD,42
+0.8,2000,10,0.3,0.75,precision_score,LogRegCCD,42
+0.8,2000,10,0.3,0.10465116279069768,recall_score,LogRegCCD,42
+0.8,2000,10,0.3,0.1836734693877551,f1_score,LogRegCCD,42
+0.8,2000,10,0.3,0.5475485113316545,roc_auc_score,LogRegCCD,42
+0.8,2000,10,0.3,0.8025,accuracy_score,LogReg sklearn,42
+0.8,2000,10,0.3,0.5897435897435898,precision_score,LogReg sklearn,42
+0.8,2000,10,0.3,0.26744186046511625,recall_score,LogReg sklearn,42
+0.8,2000,10,0.3,0.368,f1_score,LogReg sklearn,42
+0.8,2000,10,0.3,0.6082432232261887,roc_auc_score,LogReg sklearn,42
+0.8,2000,10,0.3,0.7925,accuracy_score,LogRegCCD,52
+0.8,2000,10,0.3,0.7905759162303665,precision_score,LogRegCCD,52
+0.8,2000,10,0.3,0.9901639344262295,recall_score,LogRegCCD,52
+0.8,2000,10,0.3,0.8791848617176128,f1_score,LogRegCCD,52
+0.8,2000,10,0.3,0.5740293356341675,roc_auc_score,LogRegCCD,52
+0.8,2000,10,0.3,0.805,accuracy_score,LogReg sklearn,52
+0.8,2000,10,0.3,0.819718309859155,precision_score,LogReg sklearn,52
+0.8,2000,10,0.3,0.9540983606557377,recall_score,LogReg sklearn,52
+0.8,2000,10,0.3,0.8818181818181818,f1_score,LogReg sklearn,52
+0.8,2000,10,0.3,0.640207075064711,roc_auc_score,LogReg sklearn,52
+0.8,2000,10,0.3,0.85,accuracy_score,LogRegCCD,62
+0.8,2000,10,0.3,0.7,precision_score,LogRegCCD,62
+0.8,2000,10,0.3,0.109375,recall_score,LogRegCCD,62
+0.8,2000,10,0.3,0.1891891891891892,f1_score,LogRegCCD,62
+0.8,2000,10,0.3,0.5502232142857143,roc_auc_score,LogRegCCD,62
+0.8,2000,10,0.3,0.8375,accuracy_score,LogReg sklearn,62
+0.8,2000,10,0.3,0.4838709677419355,precision_score,LogReg sklearn,62
+0.8,2000,10,0.3,0.234375,recall_score,LogReg sklearn,62
+0.8,2000,10,0.3,0.3157894736842105,f1_score,LogReg sklearn,62
+0.8,2000,10,0.3,0.5933779761904762,roc_auc_score,LogReg sklearn,62
+0.8,2000,10,0.3,0.82,accuracy_score,LogRegCCD,72
+0.8,2000,10,0.3,0.8,precision_score,LogRegCCD,72
+0.8,2000,10,0.3,0.10256410256410256,recall_score,LogRegCCD,72
+0.8,2000,10,0.3,0.18181818181818182,f1_score,LogRegCCD,72
+0.8,2000,10,0.3,0.5481764612199395,roc_auc_score,LogRegCCD,72
+0.8,2000,10,0.3,0.83,accuracy_score,LogReg sklearn,72
+0.8,2000,10,0.3,0.65625,precision_score,LogReg sklearn,72
+0.8,2000,10,0.3,0.2692307692307692,recall_score,LogReg sklearn,72
+0.8,2000,10,0.3,0.38181818181818183,f1_score,LogReg sklearn,72
+0.8,2000,10,0.3,0.6175346392737696,roc_auc_score,LogReg sklearn,72
+0.8,2000,10,0.3,0.7925,accuracy_score,LogRegCCD,82
+0.8,2000,10,0.3,0.8,precision_score,LogRegCCD,82
+0.8,2000,10,0.3,0.046511627906976744,recall_score,LogRegCCD,82
+0.8,2000,10,0.3,0.08791208791208792,f1_score,LogRegCCD,82
+0.8,2000,10,0.3,0.5216634572655904,roc_auc_score,LogRegCCD,82
+0.8,2000,10,0.3,0.8175,accuracy_score,LogReg sklearn,82
+0.8,2000,10,0.3,0.7407407407407407,precision_score,LogReg sklearn,82
+0.8,2000,10,0.3,0.23255813953488372,recall_score,LogReg sklearn,82
+0.8,2000,10,0.3,0.35398230088495575,f1_score,LogReg sklearn,82
+0.8,2000,10,0.3,0.6051325729521552,roc_auc_score,LogReg sklearn,82
+0.5,2000,10,0.3,0.735,accuracy_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7417840375586855,precision_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7559808612440191,recall_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7488151658767772,f1_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7340113730303864,roc_auc_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7275,accuracy_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.75,precision_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.7177033492822966,recall_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.7334963325183375,f1_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.7279616222851274,roc_auc_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.71,accuracy_score,LogRegCCD,52
+0.5,2000,10,0.3,0.7,precision_score,LogRegCCD,52
+0.5,2000,10,0.3,0.6927083333333334,recall_score,LogRegCCD,52
+0.5,2000,10,0.3,0.6963350785340314,f1_score,LogRegCCD,52
+0.5,2000,10,0.3,0.709334935897436,roc_auc_score,LogRegCCD,52
+0.5,2000,10,0.3,0.7125,accuracy_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.7037037037037037,precision_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.6927083333333334,recall_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.6981627296587927,f1_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.7117387820512822,roc_auc_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.6875,accuracy_score,LogRegCCD,62
+0.5,2000,10,0.3,0.6869158878504673,precision_score,LogRegCCD,62
+0.5,2000,10,0.3,0.7170731707317073,recall_score,LogRegCCD,62
+0.5,2000,10,0.3,0.7016706443914081,f1_score,LogRegCCD,62
+0.5,2000,10,0.3,0.6867417135709819,roc_auc_score,LogRegCCD,62
+0.5,2000,10,0.3,0.6775,accuracy_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.6844660194174758,precision_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.6878048780487804,recall_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.6861313868613139,f1_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.6772357723577236,roc_auc_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.665,accuracy_score,LogRegCCD,72
+0.5,2000,10,0.3,0.6824644549763034,precision_score,LogRegCCD,72
+0.5,2000,10,0.3,0.6824644549763034,recall_score,LogRegCCD,72
+0.5,2000,10,0.3,0.6824644549763034,f1_score,LogRegCCD,72
+0.5,2000,10,0.3,0.6639835502394744,roc_auc_score,LogRegCCD,72
+0.5,2000,10,0.3,0.69,accuracy_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.704225352112676,precision_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.7109004739336493,recall_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.7075471698113207,f1_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.688783570300158,roc_auc_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.7,accuracy_score,LogRegCCD,82
+0.5,2000,10,0.3,0.7,precision_score,LogRegCCD,82
+0.5,2000,10,0.3,0.7205882352941176,recall_score,LogRegCCD,82
+0.5,2000,10,0.3,0.7101449275362319,f1_score,LogRegCCD,82
+0.5,2000,10,0.3,0.6995798319327732,roc_auc_score,LogRegCCD,82
+0.5,2000,10,0.3,0.735,accuracy_score,LogReg sklearn,82
+0.5,2000,10,0.3,0.7401960784313726,precision_score,LogReg sklearn,82
+0.5,2000,10,0.3,0.7401960784313726,recall_score,LogReg sklearn,82
+0.5,2000,10,0.3,0.7401960784313726,f1_score,LogReg sklearn,82
+0.5,2000,10,0.3,0.7348939575830332,roc_auc_score,LogReg sklearn,82
+0.5,5000,10,0.3,0.712,accuracy_score,LogRegCCD,42
+0.5,5000,10,0.3,0.6943866943866944,precision_score,LogRegCCD,42
+0.5,5000,10,0.3,0.7031578947368421,recall_score,LogRegCCD,42
+0.5,5000,10,0.3,0.698744769874477,f1_score,LogRegCCD,42
+0.5,5000,10,0.3,0.711578947368421,roc_auc_score,LogRegCCD,42
+0.5,5000,10,0.3,0.721,accuracy_score,LogReg sklearn,42
+0.5,5000,10,0.3,0.7033195020746889,precision_score,LogReg sklearn,42
+0.5,5000,10,0.3,0.7136842105263158,recall_score,LogReg sklearn,42
+0.5,5000,10,0.3,0.7084639498432602,f1_score,LogReg sklearn,42
+0.5,5000,10,0.3,0.7206516290726818,roc_auc_score,LogReg sklearn,42
+0.5,5000,10,0.3,0.687,accuracy_score,LogRegCCD,52
+0.5,5000,10,0.3,0.6738703339882122,precision_score,LogRegCCD,52
+0.5,5000,10,0.3,0.7,recall_score,LogRegCCD,52
+0.5,5000,10,0.3,0.6866866866866866,f1_score,LogRegCCD,52
+0.5,5000,10,0.3,0.6872549019607843,roc_auc_score,LogRegCCD,52
+0.5,5000,10,0.3,0.696,accuracy_score,LogReg sklearn,52
+0.5,5000,10,0.3,0.6823529411764706,precision_score,LogReg sklearn,52
+0.5,5000,10,0.3,0.710204081632653,recall_score,LogReg sklearn,52
+0.5,5000,10,0.3,0.696,f1_score,LogReg sklearn,52
+0.5,5000,10,0.3,0.6962785114045618,roc_auc_score,LogReg sklearn,52
+0.5,5000,10,0.3,0.7,accuracy_score,LogRegCCD,62
+0.5,5000,10,0.3,0.7177914110429447,precision_score,LogRegCCD,62
+0.5,5000,10,0.3,0.6842105263157895,recall_score,LogRegCCD,62
+0.5,5000,10,0.3,0.7005988023952096,f1_score,LogRegCCD,62
+0.5,5000,10,0.3,0.7004214849238084,roc_auc_score,LogRegCCD,62
+0.5,5000,10,0.3,0.708,accuracy_score,LogReg sklearn,62
+0.5,5000,10,0.3,0.725050916496945,precision_score,LogReg sklearn,62
+0.5,5000,10,0.3,0.6939571150097466,recall_score,LogReg sklearn,62
+0.5,5000,10,0.3,0.7091633466135459,f1_score,LogReg sklearn,62
+0.5,5000,10,0.3,0.7083748614063107,roc_auc_score,LogReg sklearn,62
+0.5,5000,10,0.3,0.709,accuracy_score,LogRegCCD,72
+0.5,5000,10,0.3,0.7262135922330097,precision_score,LogRegCCD,72
+0.5,5000,10,0.3,0.7137404580152672,recall_score,LogRegCCD,72
+0.5,5000,10,0.3,0.7199230028873917,f1_score,LogRegCCD,72
+0.5,5000,10,0.3,0.7087609853101544,roc_auc_score,LogRegCCD,72
+0.5,5000,10,0.3,0.706,accuracy_score,LogReg sklearn,72
+0.5,5000,10,0.3,0.7228682170542635,precision_score,LogReg sklearn,72
+0.5,5000,10,0.3,0.7118320610687023,recall_score,LogReg sklearn,72
+0.5,5000,10,0.3,0.7173076923076923,f1_score,LogReg sklearn,72
+0.5,5000,10,0.3,0.7057059465007376,roc_auc_score,LogReg sklearn,72
+0.5,5000,10,0.3,0.705,accuracy_score,LogRegCCD,82
+0.5,5000,10,0.3,0.672514619883041,precision_score,LogRegCCD,82
+0.5,5000,10,0.3,0.7309322033898306,recall_score,LogRegCCD,82
+0.5,5000,10,0.3,0.700507614213198,f1_score,LogRegCCD,82
+0.5,5000,10,0.3,0.7063751926040063,roc_auc_score,LogRegCCD,82
+0.5,5000,10,0.3,0.706,accuracy_score,LogReg sklearn,82
+0.5,5000,10,0.3,0.673828125,precision_score,LogReg sklearn,82
+0.5,5000,10,0.3,0.7309322033898306,recall_score,LogReg sklearn,82
+0.5,5000,10,0.3,0.7012195121951219,f1_score,LogReg sklearn,82
+0.5,5000,10,0.3,0.7073221623009759,roc_auc_score,LogReg sklearn,82
+0.5,10000,10,0.3,0.7075,accuracy_score,LogRegCCD,42
+0.5,10000,10,0.3,0.7032193158953722,precision_score,LogRegCCD,42
+0.5,10000,10,0.3,0.7067745197168858,recall_score,LogRegCCD,42
+0.5,10000,10,0.3,0.7049924357034796,f1_score,LogRegCCD,42
+0.5,10000,10,0.3,0.7074921065448919,roc_auc_score,LogRegCCD,42
+0.5,10000,10,0.3,0.7045,accuracy_score,LogReg sklearn,42
+0.5,10000,10,0.3,0.7006048387096774,precision_score,LogReg sklearn,42
+0.5,10000,10,0.3,0.7027300303336703,recall_score,LogReg sklearn,42
+0.5,10000,10,0.3,0.701665825340737,f1_score,LogReg sklearn,42
+0.5,10000,10,0.3,0.7044807421698025,roc_auc_score,LogReg sklearn,42
+0.5,10000,10,0.3,0.698,accuracy_score,LogRegCCD,52
+0.5,10000,10,0.3,0.7105263157894737,precision_score,LogRegCCD,52
+0.5,10000,10,0.3,0.6882352941176471,recall_score,LogRegCCD,52
+0.5,10000,10,0.3,0.6992031872509961,f1_score,LogRegCCD,52
+0.5,10000,10,0.3,0.6981992797118848,roc_auc_score,LogRegCCD,52
+0.5,10000,10,0.3,0.6985,accuracy_score,LogReg sklearn,52
+0.5,10000,10,0.3,0.7121057985757884,precision_score,LogReg sklearn,52
+0.5,10000,10,0.3,0.6862745098039216,recall_score,LogReg sklearn,52
+0.5,10000,10,0.3,0.6989515726410385,f1_score,LogReg sklearn,52
+0.5,10000,10,0.3,0.69874949979992,roc_auc_score,LogReg sklearn,52
+0.5,10000,10,0.3,0.708,accuracy_score,LogRegCCD,62
+0.5,10000,10,0.3,0.7184265010351967,precision_score,LogRegCCD,62
+0.5,10000,10,0.3,0.6898608349900597,recall_score,LogRegCCD,62
+0.5,10000,10,0.3,0.7038539553752535,f1_score,LogRegCCD,62
+0.5,10000,10,0.3,0.7081094919417099,roc_auc_score,LogRegCCD,62
+0.5,10000,10,0.3,0.7085,accuracy_score,LogReg sklearn,62
+0.5,10000,10,0.3,0.7200832466181062,precision_score,LogReg sklearn,62
+0.5,10000,10,0.3,0.6878727634194831,recall_score,LogReg sklearn,62
+0.5,10000,10,0.3,0.7036095577020844,f1_score,LogReg sklearn,62
+0.5,10000,10,0.3,0.7086245104823773,roc_auc_score,LogReg sklearn,62
+0.5,10000,10,0.3,0.7195,accuracy_score,LogRegCCD,72
+0.5,10000,10,0.3,0.7086776859504132,precision_score,LogRegCCD,72
+0.5,10000,10,0.3,0.7108808290155441,recall_score,LogRegCCD,72
+0.5,10000,10,0.3,0.7097775478530781,f1_score,LogRegCCD,72
+0.5,10000,10,0.3,0.719208530449801,roc_auc_score,LogRegCCD,72
+0.5,10000,10,0.3,0.7175,accuracy_score,LogReg sklearn,72
+0.5,10000,10,0.3,0.7044989775051125,precision_score,LogReg sklearn,72
+0.5,10000,10,0.3,0.7139896373056995,recall_score,LogReg sklearn,72
+0.5,10000,10,0.3,0.7092125579001544,f1_score,LogReg sklearn,72
+0.5,10000,10,0.3,0.7173812920828014,roc_auc_score,LogReg sklearn,72
+0.5,10000,10,0.3,0.701,accuracy_score,LogRegCCD,82
+0.5,10000,10,0.3,0.6889332003988036,precision_score,LogRegCCD,82
+0.5,10000,10,0.3,0.7072671443193449,recall_score,LogRegCCD,82
+0.5,10000,10,0.3,0.697979797979798,f1_score,LogRegCCD,82
+0.5,10000,10,0.3,0.7011409035379715,roc_auc_score,LogRegCCD,82
+0.5,10000,10,0.3,0.704,accuracy_score,LogReg sklearn,82
+0.5,10000,10,0.3,0.6934673366834171,precision_score,LogReg sklearn,82
+0.5,10000,10,0.3,0.706243602865916,recall_score,LogReg sklearn,82
+0.5,10000,10,0.3,0.6997971602434077,f1_score,LogReg sklearn,82
+0.5,10000,10,0.3,0.7040504426841799,roc_auc_score,LogReg sklearn,82
+0.5,2000,10,0.3,0.735,accuracy_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7417840375586855,precision_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7559808612440191,recall_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7488151658767772,f1_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7340113730303864,roc_auc_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7275,accuracy_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.75,precision_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.7177033492822966,recall_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.7334963325183375,f1_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.7279616222851274,roc_auc_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.71,accuracy_score,LogRegCCD,52
+0.5,2000,10,0.3,0.7,precision_score,LogRegCCD,52
+0.5,2000,10,0.3,0.6927083333333334,recall_score,LogRegCCD,52
+0.5,2000,10,0.3,0.6963350785340314,f1_score,LogRegCCD,52
+0.5,2000,10,0.3,0.709334935897436,roc_auc_score,LogRegCCD,52
+0.5,2000,10,0.3,0.7125,accuracy_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.7037037037037037,precision_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.6927083333333334,recall_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.6981627296587927,f1_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.7117387820512822,roc_auc_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.6875,accuracy_score,LogRegCCD,62
+0.5,2000,10,0.3,0.6869158878504673,precision_score,LogRegCCD,62
+0.5,2000,10,0.3,0.7170731707317073,recall_score,LogRegCCD,62
+0.5,2000,10,0.3,0.7016706443914081,f1_score,LogRegCCD,62
+0.5,2000,10,0.3,0.6867417135709819,roc_auc_score,LogRegCCD,62
+0.5,2000,10,0.3,0.6775,accuracy_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.6844660194174758,precision_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.6878048780487804,recall_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.6861313868613139,f1_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.6772357723577236,roc_auc_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.665,accuracy_score,LogRegCCD,72
+0.5,2000,10,0.3,0.6824644549763034,precision_score,LogRegCCD,72
+0.5,2000,10,0.3,0.6824644549763034,recall_score,LogRegCCD,72
+0.5,2000,10,0.3,0.6824644549763034,f1_score,LogRegCCD,72
+0.5,2000,10,0.3,0.6639835502394744,roc_auc_score,LogRegCCD,72
+0.5,2000,10,0.3,0.69,accuracy_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.704225352112676,precision_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.7109004739336493,recall_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.7075471698113207,f1_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.688783570300158,roc_auc_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.7,accuracy_score,LogRegCCD,82
+0.5,2000,10,0.3,0.7,precision_score,LogRegCCD,82
+0.5,2000,10,0.3,0.7205882352941176,recall_score,LogRegCCD,82
+0.5,2000,10,0.3,0.7101449275362319,f1_score,LogRegCCD,82
+0.5,2000,10,0.3,0.6995798319327732,roc_auc_score,LogRegCCD,82
+0.5,2000,10,0.3,0.735,accuracy_score,LogReg sklearn,82
+0.5,2000,10,0.3,0.7401960784313726,precision_score,LogReg sklearn,82
+0.5,2000,10,0.3,0.7401960784313726,recall_score,LogReg sklearn,82
+0.5,2000,10,0.3,0.7401960784313726,f1_score,LogReg sklearn,82
+0.5,2000,10,0.3,0.7348939575830332,roc_auc_score,LogReg sklearn,82
+0.5,2000,2,0.3,0.6875,accuracy_score,LogRegCCD,42
+0.5,2000,2,0.3,0.7142857142857143,precision_score,LogRegCCD,42
+0.5,2000,2,0.3,0.6698564593301436,recall_score,LogRegCCD,42
+0.5,2000,2,0.3,0.691358024691358,f1_score,LogRegCCD,42
+0.5,2000,2,0.3,0.6883313710263284,roc_auc_score,LogRegCCD,42
+0.5,2000,2,0.3,0.6875,accuracy_score,LogReg sklearn,42
+0.5,2000,2,0.3,0.7121212121212122,precision_score,LogReg sklearn,42
+0.5,2000,2,0.3,0.6746411483253588,recall_score,LogReg sklearn,42
+0.5,2000,2,0.3,0.6928746928746928,f1_score,LogReg sklearn,42
+0.5,2000,2,0.3,0.6881059144768155,roc_auc_score,LogReg sklearn,42
+0.5,2000,2,0.3,0.7025,accuracy_score,LogRegCCD,52
+0.5,2000,2,0.3,0.6910994764397905,precision_score,LogRegCCD,52
+0.5,2000,2,0.3,0.6875,recall_score,LogRegCCD,52
+0.5,2000,2,0.3,0.6892950391644909,f1_score,LogRegCCD,52
+0.5,2000,2,0.3,0.7019230769230769,roc_auc_score,LogRegCCD,52
+0.5,2000,2,0.3,0.6925,accuracy_score,LogReg sklearn,52
+0.5,2000,2,0.3,0.6825396825396826,precision_score,LogReg sklearn,52
+0.5,2000,2,0.3,0.671875,recall_score,LogReg sklearn,52
+0.5,2000,2,0.3,0.6771653543307087,f1_score,LogReg sklearn,52
+0.5,2000,2,0.3,0.6917067307692308,roc_auc_score,LogReg sklearn,52
+0.5,2000,2,0.3,0.67,accuracy_score,LogRegCCD,62
+0.5,2000,2,0.3,0.6593886462882096,precision_score,LogRegCCD,62
+0.5,2000,2,0.3,0.7365853658536585,recall_score,LogRegCCD,62
+0.5,2000,2,0.3,0.695852534562212,f1_score,LogRegCCD,62
+0.5,2000,2,0.3,0.6682926829268293,roc_auc_score,LogRegCCD,62
+0.5,2000,2,0.3,0.6625,accuracy_score,LogReg sklearn,62
+0.5,2000,2,0.3,0.6535087719298246,precision_score,LogReg sklearn,62
+0.5,2000,2,0.3,0.7268292682926829,recall_score,LogReg sklearn,62
+0.5,2000,2,0.3,0.6882217090069284,f1_score,LogReg sklearn,62
+0.5,2000,2,0.3,0.6608505315822389,roc_auc_score,LogReg sklearn,62
+0.5,2000,2,0.3,0.7025,accuracy_score,LogRegCCD,72
+0.5,2000,2,0.3,0.7211538461538461,precision_score,LogRegCCD,72
+0.5,2000,2,0.3,0.7109004739336493,recall_score,LogRegCCD,72
+0.5,2000,2,0.3,0.7159904534606205,f1_score,LogRegCCD,72
+0.5,2000,2,0.3,0.7020110835276712,roc_auc_score,LogRegCCD,72
+0.5,2000,2,0.3,0.695,accuracy_score,LogReg sklearn,72
+0.5,2000,2,0.3,0.7109004739336493,precision_score,LogReg sklearn,72
+0.5,2000,2,0.3,0.7109004739336493,recall_score,LogReg sklearn,72
+0.5,2000,2,0.3,0.7109004739336493,f1_score,LogReg sklearn,72
+0.5,2000,2,0.3,0.6940745755911631,roc_auc_score,LogReg sklearn,72
+0.5,2000,2,0.3,0.6675,accuracy_score,LogRegCCD,82
+0.5,2000,2,0.3,0.6961325966850829,precision_score,LogRegCCD,82
+0.5,2000,2,0.3,0.6176470588235294,recall_score,LogRegCCD,82
+0.5,2000,2,0.3,0.6545454545454545,f1_score,LogRegCCD,82
+0.5,2000,2,0.3,0.6685174069627852,roc_auc_score,LogRegCCD,82
+0.5,2000,2,0.3,0.6675,accuracy_score,LogReg sklearn,82
+0.5,2000,2,0.3,0.6898395721925134,precision_score,LogReg sklearn,82
+0.5,2000,2,0.3,0.6323529411764706,recall_score,LogReg sklearn,82
+0.5,2000,2,0.3,0.659846547314578,f1_score,LogReg sklearn,82
+0.5,2000,2,0.3,0.6682172869147659,roc_auc_score,LogReg sklearn,82
+0.5,2000,4,0.3,0.7075,accuracy_score,LogRegCCD,42
+0.5,2000,4,0.3,0.7323232323232324,precision_score,LogRegCCD,42
+0.5,2000,4,0.3,0.69377990430622,recall_score,LogRegCCD,42
+0.5,2000,4,0.3,0.7125307125307125,f1_score,LogRegCCD,42
+0.5,2000,4,0.3,0.7081464966557278,roc_auc_score,LogRegCCD,42
+0.5,2000,4,0.3,0.705,accuracy_score,LogReg sklearn,42
+0.5,2000,4,0.3,0.7263681592039801,precision_score,LogReg sklearn,42
+0.5,2000,4,0.3,0.6985645933014354,recall_score,LogReg sklearn,42
+0.5,2000,4,0.3,0.7121951219512195,f1_score,LogReg sklearn,42
+0.5,2000,4,0.3,0.7053032390590946,roc_auc_score,LogReg sklearn,42
+0.5,2000,4,0.3,0.69,accuracy_score,LogRegCCD,52
+0.5,2000,4,0.3,0.6666666666666666,precision_score,LogRegCCD,52
+0.5,2000,4,0.3,0.7083333333333334,recall_score,LogRegCCD,52
+0.5,2000,4,0.3,0.6868686868686869,f1_score,LogRegCCD,52
+0.5,2000,4,0.3,0.6907051282051283,roc_auc_score,LogRegCCD,52
+0.5,2000,4,0.3,0.7025,accuracy_score,LogReg sklearn,52
+0.5,2000,4,0.3,0.6852791878172588,precision_score,LogReg sklearn,52
+0.5,2000,4,0.3,0.703125,recall_score,LogReg sklearn,52
+0.5,2000,4,0.3,0.6940874035989717,f1_score,LogReg sklearn,52
+0.5,2000,4,0.3,0.7025240384615383,roc_auc_score,LogReg sklearn,52
+0.5,2000,4,0.3,0.645,accuracy_score,LogRegCCD,62
+0.5,2000,4,0.3,0.6425339366515838,precision_score,LogRegCCD,62
+0.5,2000,4,0.3,0.6926829268292682,recall_score,LogRegCCD,62
+0.5,2000,4,0.3,0.6666666666666666,f1_score,LogRegCCD,62
+0.5,2000,4,0.3,0.6437773608505315,roc_auc_score,LogRegCCD,62
+0.5,2000,4,0.3,0.65,accuracy_score,LogReg sklearn,62
+0.5,2000,4,0.3,0.6431718061674009,precision_score,LogReg sklearn,62
+0.5,2000,4,0.3,0.7121951219512195,recall_score,LogReg sklearn,62
+0.5,2000,4,0.3,0.6759259259259259,f1_score,LogReg sklearn,62
+0.5,2000,4,0.3,0.648405253283302,roc_auc_score,LogReg sklearn,62
+0.5,2000,4,0.3,0.69,accuracy_score,LogRegCCD,72
+0.5,2000,4,0.3,0.7277486910994765,precision_score,LogRegCCD,72
+0.5,2000,4,0.3,0.6587677725118484,recall_score,LogRegCCD,72
+0.5,2000,4,0.3,0.6915422885572139,f1_score,LogRegCCD,72
+0.5,2000,4,0.3,0.6918177486897866,roc_auc_score,LogRegCCD,72
+0.5,2000,4,0.3,0.7,accuracy_score,LogReg sklearn,72
+0.5,2000,4,0.3,0.7309644670050761,precision_score,LogReg sklearn,72
+0.5,2000,4,0.3,0.6824644549763034,recall_score,LogReg sklearn,72
+0.5,2000,4,0.3,0.7058823529411765,f1_score,LogReg sklearn,72
+0.5,2000,4,0.3,0.7010205872765114,roc_auc_score,LogReg sklearn,72
+0.5,2000,4,0.3,0.66,accuracy_score,LogRegCCD,82
+0.5,2000,4,0.3,0.6976744186046512,precision_score,LogRegCCD,82
+0.5,2000,4,0.3,0.5882352941176471,recall_score,LogRegCCD,82
+0.5,2000,4,0.3,0.6382978723404256,f1_score,LogRegCCD,82
+0.5,2000,4,0.3,0.6614645858343338,roc_auc_score,LogRegCCD,82
+0.5,2000,4,0.3,0.6575,accuracy_score,LogReg sklearn,82
+0.5,2000,4,0.3,0.6892655367231638,precision_score,LogReg sklearn,82
+0.5,2000,4,0.3,0.5980392156862745,recall_score,LogReg sklearn,82
+0.5,2000,4,0.3,0.6404199475065617,f1_score,LogReg sklearn,82
+0.5,2000,4,0.3,0.6587134853941577,roc_auc_score,LogReg sklearn,82
+0.5,2000,6,0.3,0.705,accuracy_score,LogRegCCD,42
+0.5,2000,6,0.3,0.696969696969697,precision_score,LogRegCCD,42
+0.5,2000,6,0.3,0.7703349282296651,recall_score,LogRegCCD,42
+0.5,2000,6,0.3,0.7318181818181818,f1_score,LogRegCCD,42
+0.5,2000,6,0.3,0.7019213908164033,roc_auc_score,LogRegCCD,42
+0.5,2000,6,0.3,0.715,accuracy_score,LogReg sklearn,42
+0.5,2000,6,0.3,0.7074235807860262,precision_score,LogReg sklearn,42
+0.5,2000,6,0.3,0.7751196172248804,recall_score,LogReg sklearn,42
+0.5,2000,6,0.3,0.7397260273972602,f1_score,LogReg sklearn,42
+0.5,2000,6,0.3,0.7121671384553722,roc_auc_score,LogReg sklearn,42
+0.5,2000,6,0.3,0.715,accuracy_score,LogRegCCD,52
+0.5,2000,6,0.3,0.695,precision_score,LogRegCCD,52
+0.5,2000,6,0.3,0.7239583333333334,recall_score,LogRegCCD,52
+0.5,2000,6,0.3,0.7091836734693877,f1_score,LogRegCCD,52
+0.5,2000,6,0.3,0.7153445512820512,roc_auc_score,LogRegCCD,52
+0.5,2000,6,0.3,0.7275,accuracy_score,LogReg sklearn,52
+0.5,2000,6,0.3,0.7085427135678392,precision_score,LogReg sklearn,52
+0.5,2000,6,0.3,0.734375,recall_score,LogReg sklearn,52
+0.5,2000,6,0.3,0.7212276214833759,f1_score,LogReg sklearn,52
+0.5,2000,6,0.3,0.727764423076923,roc_auc_score,LogReg sklearn,52
+0.5,2000,6,0.3,0.685,accuracy_score,LogRegCCD,62
+0.5,2000,6,0.3,0.6889952153110048,precision_score,LogRegCCD,62
+0.5,2000,6,0.3,0.7024390243902439,recall_score,LogRegCCD,62
+0.5,2000,6,0.3,0.6956521739130435,f1_score,LogRegCCD,62
+0.5,2000,6,0.3,0.6845528455284553,roc_auc_score,LogRegCCD,62
+0.5,2000,6,0.3,0.6875,accuracy_score,LogReg sklearn,62
+0.5,2000,6,0.3,0.6818181818181818,precision_score,LogReg sklearn,62
+0.5,2000,6,0.3,0.7317073170731707,recall_score,LogReg sklearn,62
+0.5,2000,6,0.3,0.7058823529411765,f1_score,LogReg sklearn,62
+0.5,2000,6,0.3,0.6863664790494057,roc_auc_score,LogReg sklearn,62
+0.5,2000,6,0.3,0.67,accuracy_score,LogRegCCD,72
+0.5,2000,6,0.3,0.6945812807881774,precision_score,LogRegCCD,72
+0.5,2000,6,0.3,0.6682464454976303,recall_score,LogRegCCD,72
+0.5,2000,6,0.3,0.6811594202898551,f1_score,LogRegCCD,72
+0.5,2000,6,0.3,0.670102058727651,roc_auc_score,LogRegCCD,72
+0.5,2000,6,0.3,0.685,accuracy_score,LogReg sklearn,72
+0.5,2000,6,0.3,0.7114427860696517,precision_score,LogReg sklearn,72
+0.5,2000,6,0.3,0.6777251184834123,recall_score,LogReg sklearn,72
+0.5,2000,6,0.3,0.6941747572815534,f1_score,LogReg sklearn,72
+0.5,2000,6,0.3,0.6854234058025528,roc_auc_score,LogReg sklearn,72
+0.5,2000,6,0.3,0.715,accuracy_score,LogRegCCD,82
+0.5,2000,6,0.3,0.7528089887640449,precision_score,LogRegCCD,82
+0.5,2000,6,0.3,0.6568627450980392,recall_score,LogRegCCD,82
+0.5,2000,6,0.3,0.7015706806282722,f1_score,LogRegCCD,82
+0.5,2000,6,0.3,0.7161864745898359,roc_auc_score,LogRegCCD,82
+0.5,2000,6,0.3,0.7175,accuracy_score,LogReg sklearn,82
+0.5,2000,6,0.3,0.7433155080213903,precision_score,LogReg sklearn,82
+0.5,2000,6,0.3,0.6813725490196079,recall_score,LogReg sklearn,82
+0.5,2000,6,0.3,0.710997442455243,f1_score,LogReg sklearn,82
+0.5,2000,6,0.3,0.7182372949179672,roc_auc_score,LogReg sklearn,82
+0.5,2000,20,0.3,0.705,accuracy_score,LogRegCCD,42
+0.5,2000,20,0.3,0.7004405286343612,precision_score,LogRegCCD,42
+0.5,2000,20,0.3,0.7607655502392344,recall_score,LogRegCCD,42
+0.5,2000,20,0.3,0.7293577981651376,f1_score,LogRegCCD,42
+0.5,2000,20,0.3,0.7023723039154287,roc_auc_score,LogRegCCD,42
+0.5,2000,20,0.3,0.73,accuracy_score,LogReg sklearn,42
+0.5,2000,20,0.3,0.7244444444444444,precision_score,LogReg sklearn,42
+0.5,2000,20,0.3,0.7799043062200957,recall_score,LogReg sklearn,42
+0.5,2000,20,0.3,0.7511520737327189,f1_score,LogReg sklearn,42
+0.5,2000,20,0.3,0.7276484881885819,roc_auc_score,LogReg sklearn,42
+0.5,2000,20,0.3,0.7,accuracy_score,LogRegCCD,52
+0.5,2000,20,0.3,0.7068965517241379,precision_score,LogRegCCD,52
+0.5,2000,20,0.3,0.640625,recall_score,LogRegCCD,52
+0.5,2000,20,0.3,0.6721311475409836,f1_score,LogRegCCD,52
+0.5,2000,20,0.3,0.6977163461538461,roc_auc_score,LogRegCCD,52
+0.5,2000,20,0.3,0.7275,accuracy_score,LogReg sklearn,52
+0.5,2000,20,0.3,0.7371428571428571,precision_score,LogReg sklearn,52
+0.5,2000,20,0.3,0.671875,recall_score,LogReg sklearn,52
+0.5,2000,20,0.3,0.7029972752043597,f1_score,LogReg sklearn,52
+0.5,2000,20,0.3,0.725360576923077,roc_auc_score,LogReg sklearn,52
+0.5,2000,20,0.3,0.71,accuracy_score,LogRegCCD,62
+0.5,2000,20,0.3,0.7354497354497355,precision_score,LogRegCCD,62
+0.5,2000,20,0.3,0.6780487804878049,recall_score,LogRegCCD,62
+0.5,2000,20,0.3,0.7055837563451777,f1_score,LogRegCCD,62
+0.5,2000,20,0.3,0.7108192620387743,roc_auc_score,LogRegCCD,62
+0.5,2000,20,0.3,0.72,accuracy_score,LogReg sklearn,62
+0.5,2000,20,0.3,0.746031746031746,precision_score,LogReg sklearn,62
+0.5,2000,20,0.3,0.6878048780487804,recall_score,LogReg sklearn,62
+0.5,2000,20,0.3,0.7157360406091371,f1_score,LogReg sklearn,62
+0.5,2000,20,0.3,0.7208255159474671,roc_auc_score,LogReg sklearn,62
+0.5,2000,20,0.3,0.695,accuracy_score,LogRegCCD,72
+0.5,2000,20,0.3,0.7458563535911602,precision_score,LogRegCCD,72
+0.5,2000,20,0.3,0.6398104265402843,recall_score,LogRegCCD,72
+0.5,2000,20,0.3,0.6887755102040817,f1_score,LogRegCCD,72
+0.5,2000,20,0.3,0.6982120915770204,roc_auc_score,LogRegCCD,72
+0.5,2000,20,0.3,0.7125,accuracy_score,LogReg sklearn,72
+0.5,2000,20,0.3,0.7666666666666667,precision_score,LogReg sklearn,72
+0.5,2000,20,0.3,0.6540284360189573,recall_score,LogReg sklearn,72
+0.5,2000,20,0.3,0.7058823529411765,f1_score,LogReg sklearn,72
+0.5,2000,20,0.3,0.7159031068983676,roc_auc_score,LogReg sklearn,72
+0.5,2000,20,0.3,0.695,accuracy_score,LogRegCCD,82
+0.5,2000,20,0.3,0.7009803921568627,precision_score,LogRegCCD,82
+0.5,2000,20,0.3,0.7009803921568627,recall_score,LogRegCCD,82
+0.5,2000,20,0.3,0.7009803921568627,f1_score,LogRegCCD,82
+0.5,2000,20,0.3,0.6948779511804721,roc_auc_score,LogRegCCD,82
+0.5,2000,20,0.3,0.6825,accuracy_score,LogReg sklearn,82
+0.5,2000,20,0.3,0.6807511737089202,precision_score,LogReg sklearn,82
+0.5,2000,20,0.3,0.7107843137254902,recall_score,LogReg sklearn,82
+0.5,2000,20,0.3,0.6954436450839329,f1_score,LogReg sklearn,82
+0.5,2000,20,0.3,0.681922769107643,roc_auc_score,LogReg sklearn,82
+0.5,2000,50,0.3,0.67,accuracy_score,LogRegCCD,42
+0.5,2000,50,0.3,0.6790697674418604,precision_score,LogRegCCD,42
+0.5,2000,50,0.3,0.6985645933014354,recall_score,LogRegCCD,42
+0.5,2000,50,0.3,0.6886792452830188,f1_score,LogRegCCD,42
+0.5,2000,50,0.3,0.6686540243994088,roc_auc_score,LogRegCCD,42
+0.5,2000,50,0.3,0.695,accuracy_score,LogReg sklearn,42
+0.5,2000,50,0.3,0.7142857142857143,precision_score,LogReg sklearn,42
+0.5,2000,50,0.3,0.69377990430622,recall_score,LogReg sklearn,42
+0.5,2000,50,0.3,0.7038834951456311,f1_score,LogReg sklearn,42
+0.5,2000,50,0.3,0.6950574914201257,roc_auc_score,LogReg sklearn,42
+0.5,2000,50,0.3,0.6575,accuracy_score,LogRegCCD,52
+0.5,2000,50,0.3,0.6303317535545023,precision_score,LogRegCCD,52
+0.5,2000,50,0.3,0.6927083333333334,recall_score,LogRegCCD,52
+0.5,2000,50,0.3,0.6600496277915633,f1_score,LogRegCCD,52
+0.5,2000,50,0.3,0.6588541666666667,roc_auc_score,LogRegCCD,52
+0.5,2000,50,0.3,0.6675,accuracy_score,LogReg sklearn,52
+0.5,2000,50,0.3,0.6372093023255814,precision_score,LogReg sklearn,52
+0.5,2000,50,0.3,0.7135416666666666,recall_score,LogReg sklearn,52
+0.5,2000,50,0.3,0.6732186732186732,f1_score,LogReg sklearn,52
+0.5,2000,50,0.3,0.6692708333333333,roc_auc_score,LogReg sklearn,52
+0.5,2000,50,0.3,0.6675,accuracy_score,LogRegCCD,62
+0.5,2000,50,0.3,0.6714285714285714,precision_score,LogRegCCD,62
+0.5,2000,50,0.3,0.6878048780487804,recall_score,LogRegCCD,62
+0.5,2000,50,0.3,0.6795180722891566,f1_score,LogRegCCD,62
+0.5,2000,50,0.3,0.6669793621013131,roc_auc_score,LogRegCCD,62
+0.5,2000,50,0.3,0.705,accuracy_score,LogReg sklearn,62
+0.5,2000,50,0.3,0.7164179104477612,precision_score,LogReg sklearn,62
+0.5,2000,50,0.3,0.7024390243902439,recall_score,LogReg sklearn,62
+0.5,2000,50,0.3,0.7093596059113301,f1_score,LogReg sklearn,62
+0.5,2000,50,0.3,0.7050656660412757,roc_auc_score,LogReg sklearn,62
+0.5,2000,50,0.3,0.685,accuracy_score,LogRegCCD,72
+0.5,2000,50,0.3,0.7202072538860104,precision_score,LogRegCCD,72
+0.5,2000,50,0.3,0.6587677725118484,recall_score,LogRegCCD,72
+0.5,2000,50,0.3,0.6881188118811881,f1_score,LogRegCCD,72
+0.5,2000,50,0.3,0.6865267433987813,roc_auc_score,LogRegCCD,72
+0.5,2000,50,0.3,0.6775,accuracy_score,LogReg sklearn,72
+0.5,2000,50,0.3,0.7252747252747253,precision_score,LogReg sklearn,72
+0.5,2000,50,0.3,0.6255924170616114,recall_score,LogReg sklearn,72
+0.5,2000,50,0.3,0.6717557251908397,f1_score,LogReg sklearn,72
+0.5,2000,50,0.3,0.6805210762556735,roc_auc_score,LogReg sklearn,72
+0.5,2000,50,0.3,0.69,accuracy_score,LogRegCCD,82
+0.5,2000,50,0.3,0.7105263157894737,precision_score,LogRegCCD,82
+0.5,2000,50,0.3,0.6617647058823529,recall_score,LogRegCCD,82
+0.5,2000,50,0.3,0.6852791878172588,f1_score,LogRegCCD,82
+0.5,2000,50,0.3,0.690576230492197,roc_auc_score,LogRegCCD,82
+0.5,2000,50,0.3,0.69,accuracy_score,LogReg sklearn,82
+0.5,2000,50,0.3,0.7040816326530612,precision_score,LogReg sklearn,82
+0.5,2000,50,0.3,0.6764705882352942,recall_score,LogReg sklearn,82
+0.5,2000,50,0.3,0.69,f1_score,LogReg sklearn,82
+0.5,2000,50,0.3,0.6902761104441777,roc_auc_score,LogReg sklearn,82
+0.5,2000,10,0.3,0.735,accuracy_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7417840375586855,precision_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7559808612440191,recall_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7488151658767772,f1_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7340113730303864,roc_auc_score,LogRegCCD,42
+0.5,2000,10,0.3,0.7275,accuracy_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.75,precision_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.7177033492822966,recall_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.7334963325183375,f1_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.7279616222851274,roc_auc_score,LogReg sklearn,42
+0.5,2000,10,0.3,0.71,accuracy_score,LogRegCCD,52
+0.5,2000,10,0.3,0.7,precision_score,LogRegCCD,52
+0.5,2000,10,0.3,0.6927083333333334,recall_score,LogRegCCD,52
+0.5,2000,10,0.3,0.6963350785340314,f1_score,LogRegCCD,52
+0.5,2000,10,0.3,0.709334935897436,roc_auc_score,LogRegCCD,52
+0.5,2000,10,0.3,0.7125,accuracy_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.7037037037037037,precision_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.6927083333333334,recall_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.6981627296587927,f1_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.7117387820512822,roc_auc_score,LogReg sklearn,52
+0.5,2000,10,0.3,0.6875,accuracy_score,LogRegCCD,62
+0.5,2000,10,0.3,0.6869158878504673,precision_score,LogRegCCD,62
+0.5,2000,10,0.3,0.7170731707317073,recall_score,LogRegCCD,62
+0.5,2000,10,0.3,0.7016706443914081,f1_score,LogRegCCD,62
+0.5,2000,10,0.3,0.6867417135709819,roc_auc_score,LogRegCCD,62
+0.5,2000,10,0.3,0.6775,accuracy_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.6844660194174758,precision_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.6878048780487804,recall_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.6861313868613139,f1_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.6772357723577236,roc_auc_score,LogReg sklearn,62
+0.5,2000,10,0.3,0.665,accuracy_score,LogRegCCD,72
+0.5,2000,10,0.3,0.6824644549763034,precision_score,LogRegCCD,72
+0.5,2000,10,0.3,0.6824644549763034,recall_score,LogRegCCD,72
+0.5,2000,10,0.3,0.6824644549763034,f1_score,LogRegCCD,72
+0.5,2000,10,0.3,0.6639835502394744,roc_auc_score,LogRegCCD,72
+0.5,2000,10,0.3,0.69,accuracy_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.704225352112676,precision_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.7109004739336493,recall_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.7075471698113207,f1_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.688783570300158,roc_auc_score,LogReg sklearn,72
+0.5,2000,10,0.3,0.7,accuracy_score,LogRegCCD,82
+0.5,2000,10,0.3,0.7,precision_score,LogRegCCD,82
+0.5,2000,10,0.3,0.7205882352941176,recall_score,LogRegCCD,82
+0.5,2000,10,0.3,0.7101449275362319,f1_score,LogRegCCD,82
+0.5,2000,10,0.3,0.6995798319327732,roc_auc_score,LogRegCCD,82
+0.5,2000,10,0.3,0.735,accuracy_score,LogReg sklearn,82
+0.5,2000,10,0.3,0.7401960784313726,precision_score,LogReg sklearn,82
+0.5,2000,10,0.3,0.7401960784313726,recall_score,LogReg sklearn,82
+0.5,2000,10,0.3,0.7401960784313726,f1_score,LogReg sklearn,82
+0.5,2000,10,0.3,0.7348939575830332,roc_auc_score,LogReg sklearn,82
+0.5,2000,10,0.1,0.715,accuracy_score,LogRegCCD,42
+0.5,2000,10,0.1,0.7149321266968326,precision_score,LogRegCCD,42
+0.5,2000,10,0.1,0.7559808612440191,recall_score,LogRegCCD,42
+0.5,2000,10,0.1,0.7348837209302326,f1_score,LogRegCCD,42
+0.5,2000,10,0.1,0.7130689646534232,roc_auc_score,LogRegCCD,42
+0.5,2000,10,0.1,0.7225,accuracy_score,LogReg sklearn,42
+0.5,2000,10,0.1,0.7207207207207207,precision_score,LogReg sklearn,42
+0.5,2000,10,0.1,0.7655502392344498,recall_score,LogReg sklearn,42
+0.5,2000,10,0.1,0.7424593967517401,f1_score,LogReg sklearn,42
+0.5,2000,10,0.1,0.7204714546957589,roc_auc_score,LogReg sklearn,42
+0.5,2000,10,0.1,0.715,accuracy_score,LogRegCCD,52
+0.5,2000,10,0.1,0.7096774193548387,precision_score,LogRegCCD,52
+0.5,2000,10,0.1,0.6875,recall_score,LogRegCCD,52
+0.5,2000,10,0.1,0.6984126984126984,f1_score,LogRegCCD,52
+0.5,2000,10,0.1,0.7139423076923077,roc_auc_score,LogRegCCD,52
+0.5,2000,10,0.1,0.715,accuracy_score,LogReg sklearn,52
+0.5,2000,10,0.1,0.7119565217391305,precision_score,LogReg sklearn,52
+0.5,2000,10,0.1,0.6822916666666666,recall_score,LogReg sklearn,52
+0.5,2000,10,0.1,0.6968085106382979,f1_score,LogReg sklearn,52
+0.5,2000,10,0.1,0.7137419871794872,roc_auc_score,LogReg sklearn,52
+0.5,2000,10,0.1,0.68,accuracy_score,LogRegCCD,62
+0.5,2000,10,0.1,0.7015706806282722,precision_score,LogRegCCD,62
+0.5,2000,10,0.1,0.6536585365853659,recall_score,LogRegCCD,62
+0.5,2000,10,0.1,0.6767676767676768,f1_score,LogRegCCD,62
+0.5,2000,10,0.1,0.6806754221388368,roc_auc_score,LogRegCCD,62
+0.5,2000,10,0.1,0.6875,accuracy_score,LogReg sklearn,62
+0.5,2000,10,0.1,0.7040816326530612,precision_score,LogReg sklearn,62
+0.5,2000,10,0.1,0.6731707317073171,recall_score,LogReg sklearn,62
+0.5,2000,10,0.1,0.6882793017456359,f1_score,LogReg sklearn,62
+0.5,2000,10,0.1,0.6878674171357099,roc_auc_score,LogReg sklearn,62
+0.5,2000,10,0.1,0.685,accuracy_score,LogRegCCD,72
+0.5,2000,10,0.1,0.7202072538860104,precision_score,LogRegCCD,72
+0.5,2000,10,0.1,0.6587677725118484,recall_score,LogRegCCD,72
+0.5,2000,10,0.1,0.6881188118811881,f1_score,LogRegCCD,72
+0.5,2000,10,0.1,0.6865267433987813,roc_auc_score,LogRegCCD,72
+0.5,2000,10,0.1,0.6975,accuracy_score,LogReg sklearn,72
+0.5,2000,10,0.1,0.7184466019417476,precision_score,LogReg sklearn,72
+0.5,2000,10,0.1,0.7014218009478673,recall_score,LogReg sklearn,72
+0.5,2000,10,0.1,0.709832134292566,f1_score,LogReg sklearn,72
+0.5,2000,10,0.1,0.6972717470347802,roc_auc_score,LogReg sklearn,72
+0.5,2000,10,0.1,0.735,accuracy_score,LogRegCCD,82
+0.5,2000,10,0.1,0.7578947368421053,precision_score,LogRegCCD,82
+0.5,2000,10,0.1,0.7058823529411765,recall_score,LogRegCCD,82
+0.5,2000,10,0.1,0.7309644670050761,f1_score,LogRegCCD,82
+0.5,2000,10,0.1,0.735594237695078,roc_auc_score,LogRegCCD,82
+0.5,2000,10,0.1,0.755,accuracy_score,LogReg sklearn,82
+0.5,2000,10,0.1,0.765,precision_score,LogReg sklearn,82
+0.5,2000,10,0.1,0.75,recall_score,LogReg sklearn,82
+0.5,2000,10,0.1,0.7574257425742574,f1_score,LogReg sklearn,82
+0.5,2000,10,0.1,0.7551020408163265,roc_auc_score,LogReg sklearn,82
+0.5,2000,10,0.5,0.68,accuracy_score,LogRegCCD,42
+0.5,2000,10,0.5,0.6883720930232559,precision_score,LogRegCCD,42
+0.5,2000,10,0.5,0.7081339712918661,recall_score,LogRegCCD,42
+0.5,2000,10,0.5,0.6981132075471698,f1_score,LogRegCCD,42
+0.5,2000,10,0.5,0.6786743154888649,roc_auc_score,LogRegCCD,42
+0.5,2000,10,0.5,0.685,accuracy_score,LogReg sklearn,42
+0.5,2000,10,0.5,0.7004830917874396,precision_score,LogReg sklearn,42
+0.5,2000,10,0.5,0.69377990430622,recall_score,LogReg sklearn,42
+0.5,2000,10,0.5,0.6971153846153846,f1_score,LogReg sklearn,42
+0.5,2000,10,0.5,0.684586287231644,roc_auc_score,LogReg sklearn,42
+0.5,2000,10,0.5,0.7,accuracy_score,LogRegCCD,52
+0.5,2000,10,0.5,0.6875,precision_score,LogRegCCD,52
+0.5,2000,10,0.5,0.6875,recall_score,LogRegCCD,52
+0.5,2000,10,0.5,0.6875,f1_score,LogRegCCD,52
+0.5,2000,10,0.5,0.6995192307692308,roc_auc_score,LogRegCCD,52
+0.5,2000,10,0.5,0.7,accuracy_score,LogReg sklearn,52
+0.5,2000,10,0.5,0.6935483870967742,precision_score,LogReg sklearn,52
+0.5,2000,10,0.5,0.671875,recall_score,LogReg sklearn,52
+0.5,2000,10,0.5,0.6825396825396826,f1_score,LogReg sklearn,52
+0.5,2000,10,0.5,0.6989182692307692,roc_auc_score,LogReg sklearn,52
+0.5,2000,10,0.5,0.68,accuracy_score,LogRegCCD,62
+0.5,2000,10,0.5,0.672645739910314,precision_score,LogRegCCD,62
+0.5,2000,10,0.5,0.7317073170731707,recall_score,LogRegCCD,62
+0.5,2000,10,0.5,0.7009345794392523,f1_score,LogRegCCD,62
+0.5,2000,10,0.5,0.6786741713570982,roc_auc_score,LogRegCCD,62
+0.5,2000,10,0.5,0.68,accuracy_score,LogReg sklearn,62
+0.5,2000,10,0.5,0.6742081447963801,precision_score,LogReg sklearn,62
+0.5,2000,10,0.5,0.7268292682926829,recall_score,LogReg sklearn,62
+0.5,2000,10,0.5,0.6995305164319249,f1_score,LogReg sklearn,62
+0.5,2000,10,0.5,0.6787992495309568,roc_auc_score,LogReg sklearn,62
+0.5,2000,10,0.5,0.6775,accuracy_score,LogRegCCD,72
+0.5,2000,10,0.5,0.7029702970297029,precision_score,LogRegCCD,72
+0.5,2000,10,0.5,0.6729857819905213,recall_score,LogRegCCD,72
+0.5,2000,10,0.5,0.6876513317191283,f1_score,LogRegCCD,72
+0.5,2000,10,0.5,0.677762732265102,roc_auc_score,LogRegCCD,72
+0.5,2000,10,0.5,0.6875,accuracy_score,LogReg sklearn,72
+0.5,2000,10,0.5,0.7087378640776699,precision_score,LogReg sklearn,72
+0.5,2000,10,0.5,0.6919431279620853,recall_score,LogReg sklearn,72
+0.5,2000,10,0.5,0.7002398081534772,f1_score,LogReg sklearn,72
+0.5,2000,10,0.5,0.687241405250884,roc_auc_score,LogReg sklearn,72
+0.5,2000,10,0.5,0.715,accuracy_score,LogRegCCD,82
+0.5,2000,10,0.5,0.7205882352941176,precision_score,LogRegCCD,82
+0.5,2000,10,0.5,0.7205882352941176,recall_score,LogRegCCD,82
+0.5,2000,10,0.5,0.7205882352941176,f1_score,LogRegCCD,82
+0.5,2000,10,0.5,0.7148859543817526,roc_auc_score,LogRegCCD,82
+0.5,2000,10,0.5,0.7225,accuracy_score,LogReg sklearn,82
+0.5,2000,10,0.5,0.729064039408867,precision_score,LogReg sklearn,82
+0.5,2000,10,0.5,0.7254901960784313,recall_score,LogReg sklearn,82
+0.5,2000,10,0.5,0.7272727272727273,f1_score,LogReg sklearn,82
+0.5,2000,10,0.5,0.7224389755902362,roc_auc_score,LogReg sklearn,82
+0.5,2000,10,0.7,0.6675,accuracy_score,LogRegCCD,42
+0.5,2000,10,0.7,0.6862745098039216,precision_score,LogRegCCD,42
+0.5,2000,10,0.7,0.6698564593301436,recall_score,LogRegCCD,42
+0.5,2000,10,0.7,0.6779661016949152,f1_score,LogRegCCD,42
+0.5,2000,10,0.7,0.667388962649365,roc_auc_score,LogRegCCD,42
+0.5,2000,10,0.7,0.7,accuracy_score,LogReg sklearn,42
+0.5,2000,10,0.7,0.7236180904522613,precision_score,LogReg sklearn,42
+0.5,2000,10,0.7,0.6889952153110048,recall_score,LogReg sklearn,42
+0.5,2000,10,0.7,0.7058823529411765,f1_score,LogReg sklearn,42
+0.5,2000,10,0.7,0.7005185500638794,roc_auc_score,LogReg sklearn,42
+0.5,2000,10,0.7,0.695,accuracy_score,LogRegCCD,52
+0.5,2000,10,0.7,0.6767676767676768,precision_score,LogRegCCD,52
+0.5,2000,10,0.7,0.6979166666666666,recall_score,LogRegCCD,52
+0.5,2000,10,0.7,0.6871794871794872,f1_score,LogRegCCD,52
+0.5,2000,10,0.7,0.6951121794871795,roc_auc_score,LogRegCCD,52
+0.5,2000,10,0.7,0.6925,accuracy_score,LogReg sklearn,52
+0.5,2000,10,0.7,0.6699507389162561,precision_score,LogReg sklearn,52
+0.5,2000,10,0.7,0.7083333333333334,recall_score,LogReg sklearn,52
+0.5,2000,10,0.7,0.6886075949367089,f1_score,LogReg sklearn,52
+0.5,2000,10,0.7,0.6931089743589745,roc_auc_score,LogReg sklearn,52
+0.5,2000,10,0.7,0.6925,accuracy_score,LogRegCCD,62
+0.5,2000,10,0.7,0.7070707070707071,precision_score,LogRegCCD,62
+0.5,2000,10,0.7,0.6829268292682927,recall_score,LogRegCCD,62
+0.5,2000,10,0.7,0.6947890818858561,f1_score,LogRegCCD,62
+0.5,2000,10,0.7,0.6927454659161976,roc_auc_score,LogRegCCD,62
+0.5,2000,10,0.7,0.685,accuracy_score,LogReg sklearn,62
+0.5,2000,10,0.7,0.7046632124352331,precision_score,LogReg sklearn,62
+0.5,2000,10,0.7,0.6634146341463415,recall_score,LogReg sklearn,62
+0.5,2000,10,0.7,0.6834170854271356,f1_score,LogReg sklearn,62
+0.5,2000,10,0.7,0.6855534709193246,roc_auc_score,LogReg sklearn,62
+0.5,2000,10,0.7,0.7075,accuracy_score,LogRegCCD,72
+0.5,2000,10,0.7,0.7447916666666666,precision_score,LogRegCCD,72
+0.5,2000,10,0.7,0.6777251184834123,recall_score,LogRegCCD,72
+0.5,2000,10,0.7,0.7096774193548387,f1_score,LogRegCCD,72
+0.5,2000,10,0.7,0.7092329296120765,roc_auc_score,LogRegCCD,72
+0.5,2000,10,0.7,0.7125,accuracy_score,LogReg sklearn,72
+0.5,2000,10,0.7,0.7424242424242424,precision_score,LogReg sklearn,72
+0.5,2000,10,0.7,0.6966824644549763,recall_score,LogReg sklearn,72
+0.5,2000,10,0.7,0.7188264058679706,f1_score,LogReg sklearn,72
+0.5,2000,10,0.7,0.7134205973068533,roc_auc_score,LogReg sklearn,72
+0.5,2000,10,0.7,0.7025,accuracy_score,LogRegCCD,82
+0.5,2000,10,0.7,0.717948717948718,precision_score,LogRegCCD,82
+0.5,2000,10,0.7,0.6862745098039216,recall_score,LogRegCCD,82
+0.5,2000,10,0.7,0.7017543859649122,f1_score,LogRegCCD,82
+0.5,2000,10,0.7,0.7028311324529812,roc_auc_score,LogRegCCD,82
+0.5,2000,10,0.7,0.71,accuracy_score,LogReg sklearn,82
+0.5,2000,10,0.7,0.7156862745098039,precision_score,LogReg sklearn,82
+0.5,2000,10,0.7,0.7156862745098039,recall_score,LogReg sklearn,82
+0.5,2000,10,0.7,0.7156862745098039,f1_score,LogReg sklearn,82
+0.5,2000,10,0.7,0.7098839535814326,roc_auc_score,LogReg sklearn,82
+0.5,2000,10,0.9,0.7275,accuracy_score,LogRegCCD,42
+0.5,2000,10,0.9,0.7659574468085106,precision_score,LogRegCCD,42
+0.5,2000,10,0.9,0.6889952153110048,recall_score,LogRegCCD,42
+0.5,2000,10,0.9,0.72544080604534,f1_score,LogRegCCD,42
+0.5,2000,10,0.9,0.729314361582204,roc_auc_score,LogRegCCD,42
+0.5,2000,10,0.9,0.7625,accuracy_score,LogReg sklearn,42
+0.5,2000,10,0.9,0.8064516129032258,precision_score,LogReg sklearn,42
+0.5,2000,10,0.9,0.7177033492822966,recall_score,LogReg sklearn,42
+0.5,2000,10,0.9,0.759493670886076,f1_score,LogReg sklearn,42
+0.5,2000,10,0.9,0.7646108369448132,roc_auc_score,LogReg sklearn,42
+0.5,2000,10,0.9,0.7125,accuracy_score,LogRegCCD,52
+0.5,2000,10,0.9,0.6974358974358974,precision_score,LogRegCCD,52
+0.5,2000,10,0.9,0.7083333333333334,recall_score,LogRegCCD,52
+0.5,2000,10,0.9,0.7028423772609819,f1_score,LogRegCCD,52
+0.5,2000,10,0.9,0.7123397435897437,roc_auc_score,LogRegCCD,52
+0.5,2000,10,0.9,0.75,accuracy_score,LogReg sklearn,52
+0.5,2000,10,0.9,0.7346938775510204,precision_score,LogReg sklearn,52
+0.5,2000,10,0.9,0.75,recall_score,LogReg sklearn,52
+0.5,2000,10,0.9,0.7422680412371134,f1_score,LogReg sklearn,52
+0.5,2000,10,0.9,0.75,roc_auc_score,LogReg sklearn,52
+0.5,2000,10,0.9,0.67,accuracy_score,LogRegCCD,62
+0.5,2000,10,0.9,0.6622222222222223,precision_score,LogRegCCD,62
+0.5,2000,10,0.9,0.7268292682926829,recall_score,LogRegCCD,62
+0.5,2000,10,0.9,0.6930232558139535,f1_score,LogRegCCD,62
+0.5,2000,10,0.9,0.6685428392745467,roc_auc_score,LogRegCCD,62
+0.5,2000,10,0.9,0.7375,accuracy_score,LogReg sklearn,62
+0.5,2000,10,0.9,0.7293577981651376,precision_score,LogReg sklearn,62
+0.5,2000,10,0.9,0.775609756097561,recall_score,LogReg sklearn,62
+0.5,2000,10,0.9,0.75177304964539,f1_score,LogReg sklearn,62
+0.5,2000,10,0.9,0.7365228267667292,roc_auc_score,LogReg sklearn,62
+0.5,2000,10,0.9,0.685,accuracy_score,LogRegCCD,72
+0.5,2000,10,0.9,0.7073170731707317,precision_score,LogRegCCD,72
+0.5,2000,10,0.9,0.6872037914691943,recall_score,LogRegCCD,72
+0.5,2000,10,0.9,0.6971153846153846,f1_score,LogRegCCD,72
+0.5,2000,10,0.9,0.6848717370044385,roc_auc_score,LogRegCCD,72
+0.5,2000,10,0.9,0.735,accuracy_score,LogReg sklearn,72
+0.5,2000,10,0.9,0.7464788732394366,precision_score,LogReg sklearn,72
+0.5,2000,10,0.9,0.7535545023696683,recall_score,LogReg sklearn,72
+0.5,2000,10,0.9,0.75,f1_score,LogReg sklearn,72
+0.5,2000,10,0.9,0.7339201083276913,roc_auc_score,LogReg sklearn,72
+0.5,2000,10,0.9,0.75,accuracy_score,LogRegCCD,82
+0.5,2000,10,0.9,0.7574257425742574,precision_score,LogRegCCD,82
+0.5,2000,10,0.9,0.75,recall_score,LogRegCCD,82
+0.5,2000,10,0.9,0.7536945812807881,f1_score,LogRegCCD,82
+0.5,2000,10,0.9,0.75,roc_auc_score,LogRegCCD,82
+0.5,2000,10,0.9,0.75,accuracy_score,LogReg sklearn,82
+0.5,2000,10,0.9,0.7574257425742574,precision_score,LogReg sklearn,82
+0.5,2000,10,0.9,0.75,recall_score,LogReg sklearn,82
+0.5,2000,10,0.9,0.7536945812807881,f1_score,LogReg sklearn,82
+0.5,2000,10,0.9,0.75,roc_auc_score,LogReg sklearn,82
