@@ -133,38 +133,26 @@ Where $m$ is the number of training samples, $y^{(i)}$ is the class label, $\hat
 
 In essence during the training process, the model will also minimize the absolute sum of the coefficients in addition to the loss function. This will result in some of the weights being set to zero, effectively reducing the number of features the model is trained on. This can be useful in situations where the number of features is very large and some of them are irrelevant to the prediction task.
 
-Now, to use the Cyclic Coordinate Descent instead of the standard Gradient Descent one needs to minimize the $\mathcal{L}_{\text{lasso}}$ using a different algorithm for updating model weights.
+Now, to use the Cyclic Coordinate Descent instead of the standard Gradient Descent one needs to minimize the $\mathcal{L}_{\text{lasso}}$ using a different algorithm for updating model weights. However the authors of the 2010 publication entitled \textit{Regularization Paths for Generalized Linear Models via Coordinate Descent} \cite{Friedman2010} present a more sophisticated approach with certain optimizations.
 
-However the authors of the 2010 publication entitled \textit{Regularization Paths for Generalized Linear Models via Coordinate Descent} \cite{Friedman2010} present a more sophisticated approach with certain optimizations.
-First, the Logistic Regression log-likelihood:
 
-$$
-\max_{\beta} \sum_{i=1}^{N} \left[ y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right] - \lambda ||\beta||_1
-$$
+The logistic regression with lasso regulaization log-likelihood function is approxiamted using a quadratic approximation presented in Formula \ref{eq:quadratic-approximation}. This converts the problem into a penalized weighted least squares. The authors also use a regularization path that starts from largest $\lambda$ where $\beta = 0$ and decreases $\lambda$ gradually, using previous solutions as warm starts. Instead of computing gradients from scratch with each iteration, the authors propose to use covariance updates (Formula \ref{eq:covariance-update}). This in turn allows for a more efficient computation of the gradients. For each feature, the optimization problem simplifies to a minimization problem presented in Formula \ref{feature-minimization}.
 
-is approximated with a quadratic approximation:
-
-$$
+\begin{equation}\label{eq:quadratic-approximation}
 \ell_Q(\beta_0, \beta) = -\frac{1}{2N} \sum_{i=1}^{N} w_i (z_i - \beta_0 - x_i^T \beta)^2 + C
-$$
+\end{equation}
 
-That converts the problem into a penalized weighted least squares.
 
-The authors also use a regularization path that starts from largest $\lambda$ where $\beta = 0$ and decreases $\lambda$ gradually, using previous solutions as warm starts.
-
-Instead of computing gradients from scratch with each iteration, the authors propose to use covariance updates:
-
-$$
+\begin{equation}\label{eq:covariance-update}
 \sum_{i=1}^{N} x_{ij} r_i = \langle x_j, y \rangle - \sum_{k: \beta_k \neq 0} \langle x_j, x_k \rangle \beta_k
-$$
+\end{equation}
 
-For each feature $j$, the optimization problem simplifies to:
+\begin{equation}\label{eq:feature-minimization}
+    \min_{\beta_j} \left[ \frac{1}{2} \sum_{i=1}^{N} w_i \left( z_i - \beta_0 - \sum_{k \neq j} x_{ik} \beta_k - x_{ij} \beta_j \right)^2 + \lambda |\beta_j| \right]
+\end{equation}
 
-$$
-\min_{\beta_j} \left[ \frac{1}{2} \sum_{i=1}^{N} w_i \left( z_i - \beta_0 - \sum_{k \neq j} x_{ik} \beta_k - x_{ij} \beta_j \right)^2 + \lambda |\beta_j| \right]
-$$
 
-To update the weights using CCD one needs to (for weight j):
+The algorithm for the cyclic coordinate descent for a given feature $j$ is as follows:
 \begin{enumerate}
     \item Compute partial residuals (excluding $\beta_j$)
     $$
