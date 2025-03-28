@@ -57,8 +57,6 @@ for i in range(len(datasets)):
     4. Create an instance of LogRegCCD, use the fit() method on the train set and then validate() with chosen metric (callable function) to receive a score 
 
 
-
-
 # Requirements
 
 All the scripts have been executed with [Python 3.13.2](https://www.python.org/). [Pyenv](https://github.com/pyenv/pyenv) can be used to easily manage your python installations. It is recommended to create a python environment in the cloned repository:
@@ -77,7 +75,9 @@ All the scripts are formatted with the Black formatter.
 
 # Reproducibility
 
-To ensure reproducibility: download the datasets from the provided links, use the same Python version (Requirements) and don't change the seeds. The experiments have been performed on a Windows 11 Intel i5 machine.
+To ensure reproducibility: download the datasets from the provided links and place them in the datasets folder (look dir structure below), use the same Python version (Requirements) and don't change the seeds. The experiments have been performed on a Windows 11 Intel i5 machine.
+
+To reproduce all results simply execute the notebook cells one by one. Alternatively execute the *Imports & Consts* and *Classes & Functions* sections and then execute sections of interest or just use the defined functions.
 
 # Directory structure
 
