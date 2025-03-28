@@ -10,7 +10,34 @@ The details of the data and algorithms used are in the solution.ipynb and in the
 
 # Using a different dataset
 
-TODO: Instruction how to use the Dataset class. What input data does it expect etc.
+There are 3 ways in case you want to use a separate dataset:
+
+1. Wrapping the new dataset in the Dataset class:
+
+    1. Prepare the dataset: create a Pandas dataframe where the last column is the target and the rest of the columns are features. If your dataset is in the .arff format you should be able to load it with load_dataset() function.
+    2. Create a new instance of the Dataset class. As arguments pass the name, source df, and optionally preprocessing steps (available as methods of the Dataset class)
+    3. As a result you will receive an object with X and y properties that are numpy arrays ready for further processing.
+    4. Create train and test sets if needed with scikit's train_test_split
+    5. Create an instance of LogRegCCD, use the fit() method on the train set and then validate() with chosen metric (callable function) to receive a score.
+
+2. Creating a class inheriting from the Dataset class
+
+    1. Create a new class that inherits from the Dataset class.
+    2. In the __init__() load the dataset (you may use the load_dataset() class if it's in the .arff format)
+    3. Make sure your loaded data is a Pandas dataframe where the last column is the target and the rest of the columns are features
+    4. Call super().__init__() with name, source df, and optionally preprocessing steps (available as methods of the Dataset class)
+    5. Once you create an instance of the new class you will receive an object with X and y properties that are numpy arrays ready for further processing.
+    6. Create train and test sets if needed with scikit's train_test_split
+    7. Create an instance of LogRegCCD, use the fit() method on the train set and then validate() with chosen metric (callable function) to receive a score
+
+3. Manually creating a new dataframe
+
+    1. Load and preprocess your data to a pandas Dataframe (if your data is in the .arff format then use the load_dataset() function)
+    2. Convert the features and the response variable to numpy arrays. Make sure the response classes are numeric.
+    3. Create train and test sets if needed with scikit's train_test_split
+    4. Create an instance of LogRegCCD, use the fit() method on the train set and then validate() with chosen metric (callable function) to receive a score 
+
+
 
 # Requirements
 
