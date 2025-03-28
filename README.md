@@ -1,12 +1,16 @@
 # Cyclic Coordinate Descent for Logistic Regression with Lasso regularization
 
-This notebook presents the implementation of Cyclic Coordinate Descent (CCD) algorithm for parameter 
-estimation in regularized logistic regression with l1 (lasso) penalty and compares it with standard 
-logistic regression model without regularization. 
+This notebook presents the implementation of Cyclic Coordinate Descent (CCD) algorithm for parameter
+estimation in regularized logistic regression with l1 (lasso) penalty and compares it with standard
+logistic regression model without regularization.
 
 In particular it involves the implementation of such algorithm from scratch and comparison to the Logistic Regression available in scikit-learn package.
 
 The details of the data and algorithms used are in the solution.ipynb and in the ./report/report.pdf
+
+# Using a different dataset
+
+TODO: Instruction how to use the Dataset class. What input data does it expect etc.
 
 # Requirements
 
@@ -30,15 +34,16 @@ To ensure reproducibility: download the datasets from the provided links, use th
 
 # Directory structure
 
-```  
-.  
-├── datasets/  
-├── report/  
-├── results/  
-└── solution.ipynb  
-```  
+```
+.
+├── datasets/
+├── report/
+├── results/
+└── solution.ipynb
+```
 
+![Parameter Facet Grid](./results/parameter_facet_grid.png)
 
-TODO:
+![Comparison on synthetic dataset](./results/comparison-synthetic-dataset.png)
 
-1. Place here resulting graphics of comparison and performance.
+TODO: Add here 1-2 more images, preferably of comparison on real dataset and maybe how the weights change with lambda or similar
