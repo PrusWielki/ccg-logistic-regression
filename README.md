@@ -20,6 +20,25 @@ There are 3 ways in case you want to use a separate dataset:
     4. Create train and test sets if needed with scikit's train_test_split
     5. Create an instance of LogRegCCD, use the fit() method on the train set and then validate() with chosen metric (callable function) to receive a score.
 
+---
+
+If all your new datasets are in the .arff format. Place them in a single folder and use the below code snippet:
+
+```{python}
+datasets = load_datasets()
+
+preprocessing_steps = [
+    Dataset.fill_missing_values,
+    Dataset.remove_colinear_features,
+    Dataset.normalize,
+]
+
+for i in range(len(datasets)):
+    datasets[i] = Dataset(datasets[i]["name"], datasets[i]["data"], preprocessing_steps)
+```
+
+---
+
 2. Creating a class inheriting from the Dataset class
 
     1. Create a new class that inherits from the Dataset class.
@@ -36,6 +55,7 @@ There are 3 ways in case you want to use a separate dataset:
     2. Convert the features and the response variable to numpy arrays. Make sure the response classes are numeric.
     3. Create train and test sets if needed with scikit's train_test_split
     4. Create an instance of LogRegCCD, use the fit() method on the train set and then validate() with chosen metric (callable function) to receive a score 
+
 
 
 
