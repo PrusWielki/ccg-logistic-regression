@@ -25,7 +25,7 @@ There are 3 ways in case you want to use a separate dataset:
 If all your new datasets are in the .arff format. Place them in a single folder and use the below code snippet:
 
 ```{python}
-datasets = load_datasets()
+datasets = load_datasets(path_to_datasets)
 
 preprocessing_steps = [
     Dataset.fill_missing_values,
