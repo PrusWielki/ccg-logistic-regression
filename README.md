@@ -93,4 +93,6 @@ To reproduce all results simply execute the notebook cells one by one. Alternati
 
 ![Comparison on synthetic dataset](./results/comparison-synthetic-dataset.png)
 
+![Comparison of the coefficients](./results/logistic_regression_l1_logregccd_coefficients_synthetic_dataset.png)
+
 TODO: Add here 1-2 more images, preferably of comparison on real dataset and maybe how the weights change with lambda or similar
