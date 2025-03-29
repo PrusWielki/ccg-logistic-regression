@@ -232,9 +232,43 @@ From a high level overview the presented algorithm consists of:
 
 \subsection{Performance of the algorithm at lambda=0}
 
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../results/log_likelihood_synthetic_dataset_lambda_0.png}
+        \caption{Log likelihood function values depending on iteration for synthetic dataset with $\lambda=0$}
+        \label{fig:log-likelihood-synthetic-dataset-lambda-0}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../results/coefficients_synthetic_dataset_lambda_0.png}
+        \caption{Coefficient values depending on iteration for synthetic dataset with $\lambda=0$}
+        \label{fig:coefficients-synthetic-dataset-lambda-0}
+    \end{minipage}
+\end{figure}
+
 \subsection{Likelihood function values and coefficient values depending on iteration}
 
+
+\begin{figure}
+    \centering
+  \includegraphics[width=\textwidth]{../results/log_likelihood_synthetic_dataset.png}
+    \caption{Log likelihood function values depending on iteration for synthetic dataset}
+    \label{fig:log-likelihood-synthetic-dataset}
+\end{figure}
+
 \subsection{Comparison with ready implementation of logistic regression with L1 penalty}
+
+
+\begin{figure}[h]
+    \centering
+  \includegraphics[width=\textwidth]{../results/logistic_regression_l1_logregccd_coefficients_redundant_features.png}
+    \caption{Comparison of LogRegCCD and LogisticRegression on synthetic dataset with redundant features}
+    \label{fig:comparison-synthetic-dataset-redundant-features}
+  \end{figure}
 
 
 \clearpage 
