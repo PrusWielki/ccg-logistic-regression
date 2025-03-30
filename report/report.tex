@@ -106,6 +106,8 @@ All of the real datasets were taken from the OpenML \cite{OpenML2013} repository
 
 \end{itemize}
 
+The datasets have been preprocessed by removing colinear features, imputing missing values and standarization (min-max scaling for synthetic datasets and unit-variance scaling for real datasets). The datasets were split into training, validation (for the LogRegCCD algorithm) and test sets. The presented rsults were performed with five predefined seeds, meaning each experiment configuration has been repeated five times.
+
 
 \subsection{Details about algorithm implementation and applied optimizations}
 
@@ -217,15 +219,14 @@ From a high level overview the presented algorithm consists of:
 
 \section{Impact of dataset parameters: n.p,d,g on the performance of LogRegCCD algorithm}
 
-The performance of the LogRegCCD algorithm was evaluated on synthetic datasets with different values of the parameters: class prior probability $p$, number of samples $n$, number of features $d$, and the covariance matrix $g$ parameter defined as $S[i,j] = g^{|i-j|}$. The results are presented in Figure \ref{fig:synthetic-dataset-parameters}. The performance was evaluated using the following metrics: ROC AUC and balanced accuracy. The effects of the synthetic dataset features on the performance of the models are as follows:
-
-% todo: Add some reasons behind these
+The performance of the LogRegCCD algorithm was evaluated on synthetic datasets with different values of the parameters: class prior probability $p$, number of samples $n$, number of features $d$, and the covariance matrix $g$ parameter defined as $S[i,j] = g^{|i-j|}$. The results are presented in Figure \ref{fig:synthetic-dataset-parameters}. The performance was evaluated using the following metrics: ROC AUC and balanced accuracy. The general conclusion is that the implemented model performs very similarly to the scikit's LogisticRegression algorithm. Furthermore, the effects of the synthetic dataset features on the performance of the models are as follows:
 
 \begin{itemize}
     \item \textbf{p}: As the class prior probability diverges from 0.5 the balanced accuracy decrease. The dataset becomes more imbalanced and the model struggles to predict the minority class. Whereas for ROC AUC the effect of the p parameter does not seem to follow a regular pattern. All models achieve highest ROC AUC for p = 0.5 when the dataset is balanced. For values other than 0.5 ROC AUC drops in non regular way.
     \item \textbf{n}: As the number of samples increases the balanced accuracy increases. The model has more data to learn from and can generalize better. For ROC AUC a similar trend is true up to 1500 samples, after that the ROC AUC stays at a similar level.
     \item \textbf{d}: Both balanced accuracy and ROC AUC increase when the number of features changes from two to five. However, afterwards the performance of the model decreases. This is likely due to the fact that the model is overfitting to the training data. The model has too many features to learn from and it starts to memorize the training data instead of generalizing from it.
-    \item \textbf{g}: The g parameter affects the formula $S[i,j] = g^{|i-j|}$. Here, we see a tilted U shaped curved, as the covarianc increase the balanced accuracy decreases until around 0.7 where it starts to rapidly increase.
+    \item \textbf{g}: Here, we see a tilted U shaped curved, as the covarianc increase the balanced accuracy decreases until around 0.7 where it starts to rapidly increase. When the covariance between the features is low they contribute relatively independently to the classification. As the covariance increases the features become more correlated leading to redundant information and the model's performance worsens. However, around $g \approx 0.7$ a transition happens where the features become so correlated that they effectively act as a smaller number of independent features. At this point the model starts performing better again. The ROC AUC metric behaves similarly.
+    
 \end{itemize}
 
 \begin{figure}[h]
@@ -241,7 +242,11 @@ The performance of the LogRegCCD algorithm was evaluated on synthetic datasets w
 
 
 
-\subsection{Performance of algorithms regarding different metrics}
+
+The overall performance comparison of all three models on the real datasets is available in Figure \ref{fig:real-data-boxplots}. The LogRegCCD algorithm performs nearly identically to the scikit's logistic regression with l1 penalty, although in the case of ArrhythmiaDataset and SpeechTreatmentDataset it achieves higher results in terms of ROC AUC, balanced accuracy and recall while having slightly worse precision meaning that the LogRegCCD is better at predicting the positive class in these specific cases. Interestingly standard logistic regression without penalty performs best in terms of all metrics on the DBWorldSubjectsDataset dataset. However, it is important to keep in mind that this dataset is very small and the model might be overfitting to the training data. Regardless, here the LogRegCCD also achieves satisfactory results with accuracy in the neighbourhood of 80\%. \par
+
+Similar conclusions can be drawn from the overall comparison on synthetic datasets depicted in Figure \ref{fig:comparison-synthetic-dataset}. The LogRegCCD algorithm performs similarly to the scikit's logistic regression with l1 penalty as well as without penalty. Small notable differences are that in terms of accuracy the scikit's model with l1 penalty performs slightly better than the LogRegCCD algorithm, while the LogRegCCD algorithm performs slightly better in terms of precision as well as the scikit's model without penalty achieving slighlt higher balanced accuracy on average. As a result one might conclude that depending on the metric of interest it is worthwhile to consider a different model, however the differences are negligible and it is more important to choose the model that is best suited for the specific dataset and task at hand. \par
+
 
 \begin{figure}[h]
     \centering
@@ -263,7 +268,9 @@ The performance of the LogRegCCD algorithm was evaluated on synthetic datasets w
 
 \section{Discussion about correctness of the LogRegCCD algorithm}
 
-\subsection{Performance of the algorithm at lambda=0}
+The previous results already hint at the correctness of the implemented algorithm in terms of it's similar performance to scikit's logistic regression. However, to further investigate the correctness of the algorithm we can look at the log-likelihood function values and coefficient values depending on iteration. The log-likelihood function is a measure of how well the model fits the data. The higher the value, the better the fit. The coefficient values are the weights assigned to each feature in the model. The higher the value, the more important the feature is for the prediction task. \par
+
+At lambda = 0 the log-likelihood function values and coefficient values depending on iteration are presented in Figure \ref{fig:log-likelihood-synthetic-dataset-lambda-0} and Figure \ref{fig:coefficients-synthetic-dataset-lambda-0} respectively. The log-likelihood function values increase with each iteration, meaning that the model is improving with each step. The coefficient values also change with each iteration, but they seem to stabilize after around 100 iterations. Although the itration limit is set to 1000 the process stops at around 250 iterations meaning that the model successfuly converged. This is a good indicator that the implemented model is correct.\par
 
 
 \begin{figure}[h]
@@ -283,7 +290,7 @@ The performance of the LogRegCCD algorithm was evaluated on synthetic datasets w
     \end{minipage}
 \end{figure}
 
-\subsection{Likelihood function values and coefficient values depending on iteration}
+It is worth to examine the likelihood function values depending on the iteration per every lambda. This is depicted in Figure \ref{fig:log-likelihood-synthetic-dataset}. The log-likelihood function values increase with each iteration for each lambda. However the strongest changes happen for the largest initial lambda value (given the regularization parameter is not too strong). As the lambda decreases the log-likelihood function values increase more slowly. This can be explained by the fact that larger lambda cause more aggressive weights changes translating to large jumps in log-likelihood. As the lambda values get smaller the weights are less constrained and the log-likelihood function values increase more slowly. The same pattern can be observed regarding the values of coefficients (Figure can be found in the attached Python notebook) \par
 
 
 \begin{figure}
@@ -293,7 +300,8 @@ The performance of the LogRegCCD algorithm was evaluated on synthetic datasets w
     \label{fig:log-likelihood-synthetic-dataset}
 \end{figure}
 
-\subsection{Comparison with ready implementation of logistic regression with L1 penalty}
+
+Lastly, to investigate the effects of regularization itself the values of coefficients based on lambda have been compared with the values of coefficients obtained from the scikit's logistic regression with l1 penalty. The results are presented in Figure \ref{fig:comparison-synthetic-dataset-redundant-features}. The two plots are almost identical with slight difference at what lambda value the coefficients change from zero. This is likely to the fact that the scikit's logistic regression uses a different algorithm to compute the coefficients. However the differnces are very small and it further strengthens the argument that the implemented algorithm is correct. \par
 
 
 \begin{figure}[h]
@@ -304,9 +312,12 @@ The performance of the LogRegCCD algorithm was evaluated on synthetic datasets w
   \end{figure}
 
 
+To conclude it is fair to say in the given context that the implemented algorithm is correct, meaning that it is capable of performing logistic regression with lasso regularization and performs similarly to the scikit's implementation. The algorithm is capable of converging to a solution and the results are consistent with the expected behavior of the model. Further information such as the behaviour of the differences in coefficients between the models, or the exact coefficient values in different scenarios is available in the attached Python notebook.
+
+
 \clearpage 
 \listoffigures
-\listoftables
+% \listoftables
 \printbibliography
 
 \end{document}
