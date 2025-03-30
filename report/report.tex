@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}
 
-\usepackage[ margin=1in]{geometry}
+\usepackage[margin=1in]{geometry}
 \usepackage{titlesec}
 \usepackage[hidelinks]{hyperref}
 \usepackage{adjustbox}
@@ -85,23 +85,25 @@ Advanced Machine Learning Course
 
 The implemented Cyclic Coordinate Descent for Logsitic Regression with Lasso regularization (LogRegCCD) algorithm was tested on both real and synthetic datasets to evaluate its performance given various metrics such as accuracy, precision, recall, F1 score, balanced accuracy and ROC AUC \cite{powers2011evaluation, brodersen2010balanced, fawcett2006introduction} provided by the scikit-learn \cite{scikit-learn} Python \cite{python} library. \par 
 
-% TODO: Describe the real datasets here
 
 
-\begin{figure}[h]
-    \centering
-  \includegraphics[width=\textwidth]{../results/real_data_boxplots.png}
-    \caption{Boxplots of metrics for real datasets}
-    \label{fig:real-data-boxplots}
-  \end{figure}
-
-The synthetic datasets have been created with various values of the following parameters: class prior probability $p$, number of samples $n$, number of features $d$, and the covariance matrix $g$ parameter defined as $S[i,j] = g^{|i-j|}$. We have examined all unique combinations of the following parameter values: $p \in \{0.3, 0.4, 0.5, 0.6, 0.7\}$, $n \in \{1000, 1500, 2000\}$, $d \in \{2, 5, 10, 30\}$ and $g \in \{0.1, 0.3, 0.5, 0.7, 0.9\}$. The synthetic datasets were generated according to the task description, that is:
+The synthetic datasets have been created with various values of the following parameters: class prior probability $p$, number of samples $n$, number of features $d$, and the covariance matrix $g$ parameter defined as $S[i,j] = g^{|i-j|}$. We have examined all unique combinations of the following parameter values: $p \in \{0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8\}$, $n \in \{1000, 1500, 2000\}$, $d \in \{2, 5, 10, 30\}$ and $g \in \{0.1, 0.3, 0.5, 0.7, 0.9\}$. For $p$ and $g$ we have examined more parameter values to further investigate certain trends discussed in further sections. The synthetic datasets were generated according to the task description, that is:
 
 \begin{itemize}
     \item Generate binary class variable (Y=0 or Y=1) from Bernoulli distribution with class prior probability p.
     \item Generate feature vector X, such that for class Y=0, X follows d-dimensional multivariate normal distribution with mean vector $\boldsymbol{\mu_0} = (0,\dots,0)$ and covariance matrix $S$ where $S[i,j] = g^{|i-j|}$.
     \item For class Y=1, X follows d-dimensional multivariate normal distribution with mean vector $\boldsymbol{\mu_1} = (1,\frac{1}{2},\frac{1}{3},\dots,\frac{1}{d})$ and the same covariance matrix $S$.
     \item Generate n observations using the above steps.
+\end{itemize}
+
+All of the real datasets were taken from the OpenML \cite{OpenML2013} repository. The datasets were selected based on the criteria of having the amount of features of at least 50\% of the amount of samples, having preferably numerical features, low amount of missing values and a multi-class response variable. The datasets that have met these criteria are as follows:
+\begin{itemize}
+    \item \textbf{ArrhythmiaDataset} - A binarized version of the Cardiac Arrhythmia Database, where the aim is to determine the type of arrhythmia from the ECG recordings. This dataset contains 279 features, and 452 samples \cite{arrhythmia_5}.
+    \item \textbf{SpeechTreatmentDataset} - The dataset containes phonation samples from patients with voice disorders. The aim of the dataset is to assess whether the voice rehabilitation treatment lead to phonations considered 'acceptable' or 'unacceptable'. The dataset contains 309 features, and 126 samples \cite{lsvt_voice_rehabilitation_282}.
+    
+    \item \textbf{SemeionDataset} - A binarized version of the Semeion Handwritten Digit Dataset, where the aim is to determine the digit from the handwritten samples. This dataset contains 256 features, and 319 samples (only instances 1 and 0 are considered) \cite{semeion_handwritten_digit_178}.
+    \item \textbf{DBWorldSubjectsDataset} - The dataset author collected 64 e-mails from DBWorld newsletter and used them to train different algorithms in order to classify between 'announces of conferences' and 'everything else'. The dataset contains 230 features, and 64 samples \cite{dbworld_e-mails_219}.
+
 \end{itemize}
 
 
@@ -215,6 +217,16 @@ From a high level overview the presented algorithm consists of:
 
 \section{Impact of dataset parameters: n.p,d,g on the performance of LogRegCCD algorithm}
 
+The performance of the LogRegCCD algorithm was evaluated on synthetic datasets with different values of the parameters: class prior probability $p$, number of samples $n$, number of features $d$, and the covariance matrix $g$ parameter defined as $S[i,j] = g^{|i-j|}$. The results are presented in Figure \ref{fig:synthetic-dataset-parameters}. The performance was evaluated using the following metrics: ROC AUC and balanced accuracy. The effects of the synthetic dataset features on the performance of the models are as follows:
+
+% todo: Add some reasons behind these
+
+\begin{itemize}
+    \item \textbf{p}: As the class prior probability diverges from 0.5 the balanced accuracy decrease. The dataset becomes more imbalanced and the model struggles to predict the minority class. Whereas for ROC AUC the effect of the p parameter does not seem to follow a regular pattern. All models achieve highest ROC AUC for p = 0.5 when the dataset is balanced. For values other than 0.5 ROC AUC drops in non regular way.
+    \item \textbf{n}: As the number of samples increases the balanced accuracy increases. The model has more data to learn from and can generalize better. For ROC AUC a similar trend is true up to 1500 samples, after that the ROC AUC stays at a similar level.
+    \item \textbf{d}: Both balanced accuracy and ROC AUC increase when the number of features changes from two to five. However, afterwards the performance of the model decreases. This is likely due to the fact that the model is overfitting to the training data. The model has too many features to learn from and it starts to memorize the training data instead of generalizing from it.
+    \item \textbf{g}: The g parameter affects the formula $S[i,j] = g^{|i-j|}$. Here, we see a tilted U shaped curved, as the covarianc increase the balanced accuracy decreases until around 0.7 where it starts to rapidly increase.
+\end{itemize}
 
 \begin{figure}[h]
     \centering
@@ -224,6 +236,15 @@ From a high level overview the presented algorithm consists of:
   \end{figure}
 
 \section{Benchmark of LogRegCCD with LogisticRegression algorithm}
+
+
+\begin{figure}[h]
+    \centering
+  \includegraphics[width=\textwidth]{../results/real_data_boxplots.png}
+    \caption{Boxplots of metrics for real datasets}
+    \label{fig:real-data-boxplots}
+  \end{figure}
+
 
 \subsection{Performance of algorithms regarding different metrics}
 
@@ -235,6 +256,8 @@ From a high level overview the presented algorithm consists of:
   \end{figure}
 
 \subsection{Values of coefficients obtained in these two methods}
+
+
 
 \section{Discussion about correctness of the LogRegCCD algorithm}
 
