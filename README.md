@@ -156,4 +156,4 @@ Used datasets:
 
 ![Comparison of the coefficients with redundant feautures](./results/logistic_regression_l1_logregccd_coefficients_redundant_features.png)
 
-TODO: Add here 1-2 more images, preferably of comparison on real dataset and maybe how the weights change with lambda or similar
+![Comparison on real data](./results/real_data_boxplots.png)

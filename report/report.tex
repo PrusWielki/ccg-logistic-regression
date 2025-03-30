@@ -87,6 +87,14 @@ The implemented Cyclic Coordinate Descent for Logsitic Regression with Lasso reg
 
 % TODO: Describe the real datasets here
 
+
+\begin{figure}[h]
+    \centering
+  \includegraphics[width=\textwidth]{../results/real_data_boxplots.png}
+    \caption{Boxplots of metrics for real datasets}
+    \label{fig:real-data-boxplots}
+  \end{figure}
+
 The synthetic datasets have been created with various values of the following parameters: class prior probability $p$, number of samples $n$, number of features $d$, and the covariance matrix $g$ parameter defined as $S[i,j] = g^{|i-j|}$. We have examined all unique combinations of the following parameter values: $p \in \{0.3, 0.4, 0.5, 0.6, 0.7\}$, $n \in \{1000, 1500, 2000\}$, $d \in \{2, 5, 10, 30\}$ and $g \in \{0.1, 0.3, 0.5, 0.7, 0.9\}$. The synthetic datasets were generated according to the task description, that is:
 
 \begin{itemize}
