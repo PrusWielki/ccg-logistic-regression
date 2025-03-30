@@ -1,6 +1,6 @@
 \documentclass[11pt]{article}
 
-\usepackage[margin=0.8in]{geometry}
+\usepackage[margin=0.81in]{geometry}
 \usepackage{titlesec}
 \usepackage[hidelinks]{hyperref}
 \usepackage{adjustbox}
@@ -223,7 +223,7 @@ It is worth to examine the likelihood function values depending on the iteration
 \end{figure}
 
 
-Lastly, to investigate the effects of regularization itself the values of coefficients based on lambda have been compared with the values of coefficients obtained from the scikit's logistic regression with l1 penalty. The results are presented in Figure \ref{fig:comparison-synthetic-dataset-redundant-features}. The two plots are almost identical with slight difference at what lambda value the coefficients change from zero. This is likely to the fact that the scikit's logistic regression uses a different algorithm to compute the coefficients. However the differnces are very small and it further strengthens the argument that the implemented algorithm is correct. \par
+Lastly, to investigate the effects of regularization itself the values of coefficients based on lambda have been compared with the values of coefficients obtained from the scikit's logistic regression with l1 penalty. Both models have been tested on a specially prepared dataset with five informative features and five redundant features. The results are presented in Figure \ref{fig:comparison-synthetic-dataset-redundant-features}. To start, both models correctly identify informative features that is reflected in these features having large coefficient values, whereas the redundant featues are close to 0. The two plots are almost identical with slight difference at what lambda value the coefficients change from zero. This is likely to the fact that the scikit's logistic regression uses a different algorithm to compute the coefficients. However the differnces are very small and it further strengthens the argument that the implemented algorithm is correct. \par
 
 
 \begin{figure}[h]
