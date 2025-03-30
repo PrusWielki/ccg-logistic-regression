@@ -132,8 +132,8 @@ Used datasets:
 
 - [SpeechTreatmentDataset](https://www.openml.org/search?type=data&sort=runs&status=active&qualities.NumberOfClasses=%3D_2&qualities.NumberOfFeatures=between_100_1000&id=1484)
 - [ArrhythmiaDataset](https://www.openml.org/search?type=data&sort=runs&status=active&qualities.NumberOfClasses=%3D_2&qualities.NumberOfFeatures=between_100_1000&id=1017)
-- [MicroMassDataset](https://www.openml.org/search?type=data&sort=runs&status=active&qualities.NumberOfFeatures=between_100_1000&id=1515)
-- [BussinessDescriptionDataset](https://www.openml.org/search?type=data&sort=runs&status=active&qualities.NumberOfFeatures=between_100_1000&id=1468)
+- [DBWorldSubjectsDataset](https://www.openml.org/search?type=data&sort=qualities.NumberOfInstances&status=active&order=asc&qualities.NumberOfFeatures=between_100_1000&format=ARFF&qualities.NumberOfClasses=gte_2&id=1563)
+- [SemeionDataset](https://www.openml.org/search?type=data&status=active&id=41973)
 
 # Directory structure
 
