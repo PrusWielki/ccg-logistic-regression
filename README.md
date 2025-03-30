@@ -22,19 +22,69 @@ There are 3 ways in case you want to use a separate dataset:
 
 ---
 
-If all your new datasets are in the .arff format. Place them in a single folder and use the below code snippet:
+If all your new datasets are in the .arff format. All columns are numerical, and the response variable is binary. Place them in a single folder and use the below code snippet:
 
 ```{python}
+# Any necessary imports and class definitions (Dataset class, LogRegCCD class, load_dataset function)
+
 datasets = load_datasets(path_to_datasets)
 
+# Choose any of the preprocessing steps you want to apply to all datasets
 preprocessing_steps = [
     Dataset.fill_missing_values,
     Dataset.remove_colinear_features,
-    Dataset.normalize,
+    Dataset.applyStandardScaler,
 ]
 
 for i in range(len(datasets)):
     datasets[i] = Dataset(datasets[i]["name"], datasets[i]["data"], preprocessing_steps)
+```
+
+However it might be the case that your dataset first needs to be preprocessed. In the notebook in the **Classes & Functions** section you can find many datasets that go through preprocessing steps, such as merging of classes, removing features with only nan values etc.
+
+Assuming your dataset is in .arff format (if it is not, please write necessary code to load your dataset into a dataframe, where the last column is the response variable). The code below examplifies how to merge classses and remove features with only nan values:
+
+```{python}
+# Any necessary imports and class definitions (Dataset class, LogRegCCD class, load_dataset function, scikit's functions, numpy, pandas)
+
+data = load_dataset("dataset_path")
+
+
+# Identify the majority class
+majority_class = data[data.columns[-1]].mode()[0]
+
+# Convert majority class to 1 and others to 0
+data[data.columns[-1]] = (data[data.columns[-1]] == majority_class).astype(int)
+dataset = Dataset(
+   "BussinessDescriptionsDataset",
+   data,
+   [
+         Dataset.fill_missing_values,
+         Dataset.remove_colinear_features,
+         Dataset.applyStandardScaler,
+   ],
+)
+
+# Remove any leftover nan values after conversion to numpy 
+# The nan values imputation is done via column mean. If all column values were none or for some reason the conversion from pandas to numpy failed for a specific feature then it will be removed here.
+
+nan_count = np.isnan(dataset.X).sum(axis=0)
+
+columns_with_nans = np.where(nan_count > 0)[0]
+
+dataset.X = np.delete(dataset.X, columns_with_nans, axis=1)
+
+# Now you can train the LogRegCCD model
+
+X_train, X_test, y_train, y_test = train_test_split(
+    dataset.X, dataset.y, test_size=0.2, random_state=42
+)
+
+logRegCCD = LogRegCCD()
+
+logRegCCD.fit(X_train, y_train)
+
+logRegCCD.validate(X_test, y_test, metric=accuracy_score)
 ```
 
 ---
@@ -78,13 +128,25 @@ To ensure reproducibility: download the datasets from the provided links and pla
 
 To reproduce all results simply execute the notebook cells one by one. Alternatively execute the _Imports & Consts_ and _Classes & Functions_ sections and then execute sections of interest or just use the defined functions.
 
+Used datasets:
+
+- [SpeechTreatmentDataset](https://www.openml.org/search?type=data&sort=runs&status=active&qualities.NumberOfClasses=%3D_2&qualities.NumberOfFeatures=between_100_1000&id=1484)
+- [ArrhythmiaDataset](https://www.openml.org/search?type=data&sort=runs&status=active&qualities.NumberOfClasses=%3D_2&qualities.NumberOfFeatures=between_100_1000&id=1017)
+- [MicroMassDataset](https://www.openml.org/search?type=data&sort=runs&status=active&qualities.NumberOfFeatures=between_100_1000&id=1515)
+- [BussinessDescriptionDataset](https://www.openml.org/search?type=data&sort=runs&status=active&qualities.NumberOfFeatures=between_100_1000&id=1468)
+
 # Directory structure
 
 ```
 .
 ├── datasets/
+│   ├── SpeechTreatmentDataset.arff
+│   ├── phpHyLSNF.arff
+│   ├── arrhythmia.arff
+│   └── phpmcGu2X.arff
 ├── report/
 ├── results/
+├── requirements.txt
 └── solution.ipynb
 ```
 
