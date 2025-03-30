@@ -79,48 +79,47 @@ Advanced Machine Learning Course
 % o Performance of algorithms regarding different metrics
 % o Values of coefficients obtained in these two methods
 
-\section{Methodology}
 
-\subsection{Selection and generation of datasets}
+\section{Selection and generation of datasets}
 
-The implemented Cyclic Coordinate Descent for Logsitic Regression with Lasso regularization (LogRegCCD) algorithm was tested on both real and synthetic datasets to evaluate its performance given various metrics such as accuracy, precision, recall, F1 score, balanced accuracy and ROC AUC \cite{powers2011evaluation, brodersen2010balanced, fawcett2006introduction} provided by the scikit-learn \cite{scikit-learn} Python \cite{python} library. \par 
-
+The implemented Cyclic Coordinate Descent for Logistic Regression with Lasso regularization (LogRegCCD) algorithm was tested on both real and synthetic datasets to evaluate its performance given various metrics such as accuracy, precision, recall, F1 score, balanced accuracy and ROC AUC \cite{powers2011evaluation, brodersen2010balanced, fawcett2006introduction} provided by the scikit-learn \cite{scikit-learn} Python \cite{python} library. \par 
 
 
-The synthetic datasets have been created with various values of the following parameters: class prior probability $p$, number of samples $n$, number of features $d$, and the covariance matrix $g$ parameter defined as $S[i,j] = g^{|i-j|}$. We have examined all unique combinations of the following parameter values: $p \in \{0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8\}$, $n \in \{1000, 1500, 2000\}$, $d \in \{2, 5, 10, 30\}$ and $g \in \{0.1, 0.3, 0.5, 0.7, 0.9\}$. For $p$ and $g$ we have examined more parameter values to further investigate certain trends discussed in further sections. The synthetic datasets were generated according to the task description, that is:
+
+The synthetic datasets have been created with various values of the following parameters: class prior probability $p$, number of samples $n$, number of features $d$, and the covariance matrix $g$ parameter defined as $S[i,j] = g^{|i-j|}$. We have examined all unique combinations of the following parameter values: $p \in \{0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8\}$, $n \in \{1000, 1500, 2000\}$, $d \in \{2, 5, 10, 30\}$ and $g \in \{0.1, 0.3, 0.5, 0.7, 0.9\}$. We have examined more parameter values for $p$ and $g$ to investigate further specific trends discussed in further sections. The synthetic datasets were generated according to the task description, that is:
 
 To generate the dataset, we first draw a binary class variable $Y$ from a Bernoulli distribution with class prior probability $p$. Then, we generate the feature vector $X$ based on the class label. For $Y = 0$, $X$ follows a $d$-dimensional multivariate normal distribution with a mean vector $\boldsymbol{\mu_0} = (0, \dots, 0)$ and a covariance matrix $S$ defined as $S[i,j] = g^{|i-j|}$. For $Y = 1$, $X$ follows a similar multivariate normal distribution but with a mean vector $\boldsymbol{\mu_1} = \left(1, \frac{1}{2}, \frac{1}{3}, \dots, \frac{1}{d} \right)$ while maintaining the same covariance matrix $S$. This process is repeated to generate $n$ observations.
 
 
-All of the real datasets were taken from the OpenML \cite{OpenML2013} repository. The datasets were selected based on the criteria of having the amount of features of at least 50\% of the amount of samples, having preferably numerical features, low amount of missing values and a multi-class response variable. The datasets that have met these criteria are as follows:
+The real datasets were taken from the OpenML \cite{OpenML2013} repository. The datasets were selected based on having the number of features of at least 50\% of the number of samples, preferably numerical features, a low amount of missing values, and a multi-class response variable. The datasets that have met these criteria are as follows:
 \begin{itemize}
-    \item \textbf{ArrhythmiaDataset} - A binarized version of the Cardiac Arrhythmia Database, where the aim is to determine the type of arrhythmia from the ECG recordings. This dataset contains 279 features, and 452 samples \cite{arrhythmia_5}.
-    \item \textbf{SpeechTreatmentDataset} - The dataset containes phonation samples from patients with voice disorders. The aim of the dataset is to assess whether the voice rehabilitation treatment lead to phonations considered 'acceptable' or 'unacceptable'. The dataset contains 309 features, and 126 samples \cite{lsvt_voice_rehabilitation_282}.
+    \item \textbf{ArrhythmiaDataset} - A binarized version of the Cardiac Arrhythmia Database, aiming to determine the type of arrhythmia from the ECG recordings. This dataset contains 279 features and 452 samples \cite{arrhythmia_5}.
+    \item \textbf{SpeechTreatmentDataset} - The dataset contains phonation samples from patients with voice disorders. The dataset assesses whether the voice rehabilitation treatment leads to phonations considered 'acceptable' or 'unacceptable'. The dataset contains 309 features and 126 samples \cite{lsvt_voice_rehabilitation_282}.
     
-    \item \textbf{SemeionDataset} - A binarized version of the Semeion Handwritten Digit Dataset, where the aim is to determine the digit from the handwritten samples. This dataset contains 256 features, and 319 samples (only instances 1 and 0 are considered) \cite{semeion_handwritten_digit_178}.
-    \item \textbf{DBWorldSubjectsDataset} - The dataset author collected 64 e-mails from DBWorld newsletter and used them to train different algorithms in order to classify between 'announces of conferences' and 'everything else'. The dataset contains 230 features, and 64 samples \cite{dbworld_e-mails_219}.
+    \item \textbf{SemeionDataset} - A binarized version of the Semeion Handwritten Digit Dataset, aiming to determine the digit from the handwritten samples. This dataset contains 256 features and 319 samples (only instances 1 and 0 are considered) \cite{semeion_handwritten_digit_178}.
+    \item \textbf{DBWorldSubjectsDataset} - The dataset author collected 64 e-mails from the DBWorld newsletter and used them to train different algorithms to classify between \textit{announces of conferences} and \textit{everything else}. The dataset contains 230 features and 64 samples \cite{dbworld_e-mails_219}.
 
 \end{itemize}
 
-The datasets have been preprocessed by removing colinear features, imputing missing values and standarization (min-max scaling for synthetic datasets and unit-variance scaling for real datasets). The datasets were split into training, validation (for the LogRegCCD algorithm) and test sets. The presented rsults were performed with five predefined seeds, meaning each experiment configuration has been repeated five times.
+The datasets have been preprocessed by removing colinear features, imputing missing values, and standardizing (min-max scaling for synthetic datasets and unit-variance scaling for real datasets). The datasets were split into training, validation (for the LogRegCCD algorithm), and test sets. The presented results were performed with five predefined seeds, meaning each experiment configuration has been repeated five times.
 
 
-\subsection{Details about algorithm implementation and applied optimizations}
+\section{Details about algorithm implementation and applied optimizations}
 
 % TODO: Make it shorter, describe just the optimizations from the paper. Actually double check them with what's in the paper.
 
-Logistic Regression is a machine learning method capable of binary classification. It predicts the probability of an outcome by computing the linear combination of input features and weights, then passing it through the sigmoid function.
+Logistic Regression is a machine learning method capable of binary classification. It predicts the probability of an outcome by computing the linear combination of input features and weights and then passing it through the sigmoid function.
 
-The output of the sigmoid function in range $[0,1]$ denotes the probability that given feature vector $x$ belongs to the positive class. What follows the prediction rule is based on the output of the sigmoid function, if it's larger than a set threshold, such as 0.5, we assign the sample to class 1, otherwise assign to class 0.
+The output of the sigmoid function in range $[0,1]$ denotes the probability that the given feature vector $x$ belongs to the positive class. What follows the prediction rule is based on the output of the sigmoid function, if it's larger than a set threshold, such as 0.5, we assign the sample to class 1, otherwise assign to class 0.
 
-To fit the model to the training data one needs to minimize the loss function, in this case Binary Cross-Entropy. The weights of the model need to be optimized to find the proper fit, this can be achieved by standard gradient descent algorithm.
+To fit the model to the training data, one needs to minimize the loss function, which is, in this case, binary cross-entropy. The weights of the model need to be optimized to find the proper fit, this can be achieved by standard gradient descent algorithm.
 
-It is also important to account for overfitting. Overfitting describes the situation when the trained model can predict samples from the training set very well but struggles on the test set. One of the methods to prevent overfitting of the model to the training data is Lasso Regulaization. In essence during the training process, the model will also minimize the absolute sum of the coefficients in addition to the loss function. This will result in some of the weights being set to zero, effectively reducing the number of features the model is trained on. This can be useful in situations where the number of features is very large and some of them are irrelevant to the prediction task.
+It is also essential to account for overfitting. Overfitting describes when the trained model can predict samples from the training set very well but struggles on the test set. One method to prevent the model from being overfitted to the training data is Lasso Regularization. In essence, during the training process, the model will also minimize the absolute sum of the coefficients in addition to the loss function. Regularization might result in some of the weights being set to zero, effectively reducing the number of features the model is trained on. Regularization can be helpful when the number of features is vast and some are irrelevant to the prediction task.
 
-Now, to use the Cyclic Coordinate Descent instead of the standard Gradient Descent one needs to minimize the regularized log-likelihood function using a different algorithm for updating model weights. However the authors of the 2010 publication entitled \textit{Regularization Paths for Generalized Linear Models via Coordinate Descent} \cite{Friedman2010} present a more sophisticated approach with certain optimizations.
+To use the Cyclic Coordinate Descent instead of the standard Gradient Descent, one needs to minimize the regularized log-likelihood function using a different algorithm for updating model weights. However, the authors of the 2010 publication entitled \textit{Regularization Paths for Generalized Linear Models via Coordinate Descent} \cite{Friedman2010} present a more sophisticated approach with certain optimizations.
 
 
-The logistic regression with lasso regulaization log-likelihood function is approxiamted using a quadratic approximation presented in Formula \ref{eq:quadratic-approximation}. The authors also use a regularization path that starts from largest $\lambda$ where $\beta = 0$ and decreases $\lambda$ gradually, using previous solutions as warm starts. Instead of computing gradients from scratch with each iteration, the authors propose to use covariance updates (Formula \ref{eq:covariance-update}). This in turn allows for a more efficient computation of the gradients. For each feature, the optimization problem simplifies to a minimization problem presented in Formula \ref{eq:feature-minimization}.
+The logistic regression with lasso regularization log-likelihood function is approximated using a quadratic approximation presented in Formula \ref{eq:quadratic-approximation}. The authors also use a regularization path that starts from the largest $\lambda$ where $\beta = 0$ and decreases $\lambda$ gradually, using previous solutions as warm starts. Instead of computing gradients from scratch with each iteration, the authors propose to use covariance updates (Formula \ref{eq:covariance-update}). This, in turn, allows for a more efficient computation of the gradients. For each feature, the optimization problem simplifies to a minimization problem presented in Formula \ref{eq:feature-minimization}.
 
 \begin{equation}\label{eq:quadratic-approximation}
 \ell_Q(\beta_0, \beta) = -\frac{1}{2N} \sum_{i=1}^{N} w_i (z_i - \beta_0 - x_i^T \beta)^2 + C
@@ -135,12 +134,12 @@ The logistic regression with lasso regulaization log-likelihood function is appr
     \min_{\beta_j} \left[ \frac{1}{2} \sum_{i=1}^{N} w_i \left( z_i - \beta_0 - \sum_{k \neq j} x_{ik} \beta_k - x_{ij} \beta_j \right)^2 + \lambda |\beta_j| \right]
 \end{equation}
 
-%TODO: this look sugly, ask if it can stay that way
+%TODO: this looks ugly, ask if it can stay that way
 
 The algorithm for the cyclic coordinate descent for a given feature $j$ is as follows. Compute partial residuals (excluding $\beta_j$): $r_i = z_i - (\beta_0 + \sum_{k \neq j} x_{ik} \beta_k)$, compute the gradient component $\rho_j$: $\rho_j = \sum_{i=1}^{N} w_i x_{ij} r_i$, apply soft-thresholding for L1 regularization: $\beta_j = \frac{S(\rho_j, \lambda)}{\sum_{i=1}^{N} w_i x_{ij}^2}$, where $S(z, \lambda) = \text{sign}(z) \cdot \max(|z| - \lambda, 0)$ and update $\beta_0$ that is not regularized: $\beta_0 = \frac{\sum_{i=1}^{N} w_i (z_i - x_i^T \beta)}{\sum_{i=1}^{N} w_i}$.
 
 
-From a high level overview the presented algorithm consists of an outer loop where we decrease $\lambda$ along a regularization path, a middle loop where we update the quadratic approximation using the current $(\beta_0, \beta)$ and an inner loop where we perform coordinate descent on the penalized weighted least squares problem. This process has been translated to Python code available in the attached notebook.
+From a high-level overview, the presented algorithm consists of an outer loop where we decrease $\lambda$ along a regularization path, a middle loop where we update the quadratic approximation using the current $(\beta_0, \beta)$, and an inner loop where we perform coordinate descent on the penalized weighted least squares problem. This process has been translated into Python code and is available in the attached notebook.
 
 
 
@@ -149,10 +148,10 @@ From a high level overview the presented algorithm consists of an outer loop whe
 The performance of the LogRegCCD algorithm was evaluated on synthetic datasets with different values of the parameters: class prior probability $p$, number of samples $n$, number of features $d$, and the covariance matrix $g$ parameter defined as $S[i,j] = g^{|i-j|}$. The results are presented in Figure \ref{fig:synthetic-dataset-parameters}. The performance was evaluated using the following metrics: ROC AUC and balanced accuracy. The general conclusion is that the implemented model performs very similarly to the scikit's LogisticRegression algorithm. Furthermore, the effects of the synthetic dataset features on the performance of the models are as follows:
 
 \begin{itemize}
-    \item \textbf{p}: As the class prior probability diverges from 0.5 the balanced accuracy decrease. The dataset becomes more imbalanced and the model struggles to predict the minority class. Whereas for ROC AUC the effect of the p parameter does not seem to follow a regular pattern. All models achieve highest ROC AUC for p = 0.5 when the dataset is balanced. For values other than 0.5 ROC AUC drops in non regular way.
-    \item \textbf{n}: As the number of samples increases the balanced accuracy increases. The model has more data to learn from and can generalize better. For ROC AUC a similar trend is true up to 1500 samples, after that the ROC AUC stays at a similar level.
-    \item \textbf{d}: Both balanced accuracy and ROC AUC increase when the number of features changes from two to five. However, afterwards the performance of the model decreases. This is likely due to the fact that the model is overfitting to the training data. The model has too many features to learn from and it starts to memorize the training data instead of generalizing from it.
-    \item \textbf{g}: Here, we see a tilted U shaped curved, as the covarianc increase the balanced accuracy decreases until around 0.7 where it starts to rapidly increase. When the covariance between the features is low they contribute relatively independently to the classification. As the covariance increases the features become more correlated leading to redundant information and the model's performance worsens. However, around $g \approx 0.7$ a transition happens where the features become so correlated that they effectively act as a smaller number of independent features. At this point the model starts performing better again. The ROC AUC metric behaves similarly.
+    \item \textbf{p}: The balanced accuracy decreases as the class prior probability diverges from 0.5. The dataset becomes more imbalanced, and the model struggles to predict the minority class. Meanwhile, for ROC AUC, the effect of the p parameter does not seem to follow a regular pattern. All models achieve the highest ROC AUC for p = 0.5 when the dataset is balanced. For values other than 0.5, ROC AUC drops in a non-regular way.
+    \item \textbf{n}: The balanced accuracy increases as the number of samples increases. The model has more data to learn from and can generalize better; for ROC AUC, a similar trend is valid for up to 1500 samples; after that, the ROC AUC stays at a similar level.
+    \item \textbf{d}: Both balanced accuracy and ROC AUC increase when the number of features changes from two to five. However, afterward, the performance of the model decreases. This is likely due to the fact that the model is overfitting to the training data. The model has too many features to learn from and starts memorizing the training data instead of generalizing it.
+    \item \textbf{g}: Here, we see a tilted U-shaped curve; as the covariance increases, the balanced accuracy decreases until around 0.7, where balanced accuracy rises rapidly. When the covariance between the features is low, they contribute relatively independently to the classification. As the covariance increases, the features become more correlated, leading to redundant information, and the model's performance worsens. However, around $g \approx 0.7$, a transition happens where the features become so correlated that they effectively act as a smaller number of independent features. At this point, the model starts performing better again. The ROC AUC metric behaves similarly.
     
 \end{itemize}
 
@@ -165,9 +164,9 @@ The performance of the LogRegCCD algorithm was evaluated on synthetic datasets w
 
 \section{Benchmark of LogRegCCD with LogisticRegression algorithm}
 
-The overall performance comparison of all three models on the real datasets is available in Figure \ref{fig:real-data-boxplots}. The LogRegCCD algorithm performs nearly identically to the scikit's logistic regression with l1 penalty, although in the case of ArrhythmiaDataset and SpeechTreatmentDataset it achieves higher results in terms of ROC AUC, balanced accuracy and recall while having slightly worse precision meaning that the LogRegCCD is better at predicting the positive class in these specific cases. Interestingly standard logistic regression without penalty performs best in terms of all metrics on the DBWorldSubjectsDataset dataset. However, it is important to keep in mind that this dataset is very small and the model might be overfitting to the training data. Regardless, here the LogRegCCD also achieves satisfactory results with accuracy in the neighbourhood of 80\%. \par
+The overall performance comparison of all three models on the real datasets is available in Figure \ref{fig:real-data-boxplots}. The LogRegCCD algorithm performs nearly identically to the scikit's logistic regression with the l1 penalty. However, in the case of ArrhythmiaDataset and SpeechTreatmentDataset, it achieves higher results in terms of ROC AUC, balanced accuracy, and recall while having slightly worse precision, meaning that the LogRegCCD is better at predicting the positive class in these specific cases. Interestingly, standard logistic regression without penalty performs best regarding all metrics on the DBWorldSubjectsDataset dataset. However, it is essential to remember that this dataset is tiny, and the model might be overfitting the training data. Regardless, here, the LogRegCCD also achieves satisfactory results with accuracy in the neighborhood of 80\%. \par
 
-Similar conclusions can be drawn from the overall comparison on synthetic datasets depicted in Figure \ref{fig:comparison-synthetic-dataset}. The LogRegCCD algorithm performs similarly to the scikit's logistic regression with l1 penalty as well as without penalty. Small notable differences are that in terms of accuracy the scikit's model with l1 penalty performs slightly better than the LogRegCCD algorithm, while the LogRegCCD algorithm performs slightly better in terms of precision as well as the scikit's model without penalty achieving slighlt higher balanced accuracy on average. As a result one might conclude that depending on the metric of interest it is worthwhile to consider a different model, however the differences are negligible and it is more important to choose the model that is best suited for the specific dataset and task at hand. \par
+Similar conclusions can be drawn from the overall comparison of synthetic datasets depicted in Figure \ref{fig:comparison-synthetic-dataset}. The LogRegCCD algorithm performs similarly to the scikit's logistic regression with l1 penalty and without penalty. A notable difference is that in terms of accuracy, Scikit's model with the l1 penalty performs somewhat better than the LogRegCCD algorithm. In contrast, the LogRegCCD algorithm performs marginally better in precision and Scikit's model without penalty, achieving slightly higher balanced accuracy on average. As a result one might conclude that depending on the metric of interest it is worthwhile to consider a different model, however the differences are negligible and it is more important to choose the model that is best suited for the specific dataset and task at hand. \par
 
 
 \begin{figure}[h]
@@ -188,11 +187,11 @@ Similar conclusions can be drawn from the overall comparison on synthetic datase
 %TODO: What should be here? Isn't it already contained in the comparison to L1?
 
 
-\section{Discussion about correctness of the LogRegCCD algorithm}
+\section{Discussion about the correctness of the LogRegCCD algorithm}
 
-The previous results already hint at the correctness of the implemented algorithm in terms of it's similar performance to scikit's logistic regression. However, to further investigate the correctness of the algorithm we can look at the log-likelihood function values and coefficient values depending on iteration. The log-likelihood function is a measure of how well the model fits the data. The higher the value, the better the fit. The coefficient values are the weights assigned to each feature in the model. The higher the value, the more important the feature is for the prediction task. \par
+The previous results already hint at the correctness of the implemented algorithm in terms of its similar performance to Scikit's logistic regression. However, to investigate the correctness of the algorithm further, we can look at the log-likelihood function values and coefficient values, depending on iteration. The log-likelihood function measures how well the model fits the data. The higher the value, the better the fit. The coefficient values are the weights assigned to each feature in the model. The higher the value, the more important the feature is for the prediction task. \par
 
-At lambda = 0 the log-likelihood function values and coefficient values depending on iteration are presented in Figure \ref{fig:log-likelihood-synthetic-dataset-lambda-0} and Figure \ref{fig:coefficients-synthetic-dataset-lambda-0} respectively. The log-likelihood function values increase with each iteration, meaning that the model is improving with each step. The coefficient values also change with each iteration, but they seem to stabilize after around 100 iterations. Although the itration limit is set to 1000 the process stops at around 250 iterations meaning that the model successfuly converged. This is a good indicator that the implemented model is correct.\par
+At lambda = 0, the log-likelihood function values and coefficient values depending on iteration are presented in Figure \ref{fig:log-likelihood-synthetic-dataset-lambda-0} and Figure \ref{fig:coefficients-synthetic-dataset-lambda-0} respectively. The log-likelihood function values increase with each iteration, meaning the model improves with each step. The coefficient values also change with each iteration but stabilize after around 100 iterations. Although the iteration limit is set to 1000, the process stops at around 250 iterations, meaning the model successfully converges. This is a good indicator that the implemented model is correct.\par
 
 
 \begin{figure}[h]
@@ -200,19 +199,19 @@ At lambda = 0 the log-likelihood function values and coefficient values dependin
     \begin{minipage}{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../results/log_likelihood_synthetic_dataset_lambda_0.png}
-        \caption{Log likelihood function values depending on iteration for synthetic dataset with $\lambda=0$}
+        \caption{Log likelihood function values depending on iteration for a synthetic dataset with $\lambda=0$}
         \label{fig:log-likelihood-synthetic-dataset-lambda-0}
     \end{minipage}
     \hfill
     \begin{minipage}{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../results/coefficients_synthetic_dataset_lambda_0.png}
-        \caption{Coefficient values depending on iteration for synthetic dataset with $\lambda=0$}
+        \caption{Coefficient values depending on iteration for a synthetic dataset with $\lambda=0$}
         \label{fig:coefficients-synthetic-dataset-lambda-0}
     \end{minipage}
 \end{figure}
 
-It is worth to examine the likelihood function values depending on the iteration per every lambda. This is depicted in Figure \ref{fig:log-likelihood-synthetic-dataset}. The log-likelihood function values increase with each iteration for each lambda. However the strongest changes happen for the largest initial lambda value (given the regularization parameter is not too strong). As the lambda decreases the log-likelihood function values increase more slowly. This can be explained by the fact that larger lambda cause more aggressive weights changes translating to large jumps in log-likelihood. As the lambda values get smaller the weights are less constrained and the log-likelihood function values increase more slowly. The same pattern can be observed regarding the values of coefficients (Figure can be found in the attached Python notebook) \par
+It is worth examining the likelihood function values depending on the iteration per every lambda. This is depicted in Figure \ref{fig:log-likelihood-synthetic-dataset}. The log-likelihood function values increase with each iteration for each lambda. However, the most substantial changes happen for the largest initial lambda value (given that the regularization parameter is not too strong). As the lambda decreases, the log-likelihood function values increase more slowly. This can be explained by the fact that larger lambda causes more aggressive weight changes, translating to significant jumps in log-likelihood. As the lambda values get smaller, the weights are less constrained, and the log-likelihood function values increase more slowly. The same pattern can be observed regarding the coefficient values (Figure in the attached Python notebook) \par.
 
 
 \begin{figure}
@@ -223,18 +222,18 @@ It is worth to examine the likelihood function values depending on the iteration
 \end{figure}
 
 
-Lastly, to investigate the effects of regularization itself the values of coefficients based on lambda have been compared with the values of coefficients obtained from the scikit's logistic regression with l1 penalty. Both models have been tested on a specially prepared dataset with five informative features and five redundant features. The results are presented in Figure \ref{fig:comparison-synthetic-dataset-redundant-features}. To start, both models correctly identify informative features that is reflected in these features having large coefficient values, whereas the redundant featues are close to 0. The two plots are almost identical with slight difference at what lambda value the coefficients change from zero. This is likely to the fact that the scikit's logistic regression uses a different algorithm to compute the coefficients. However the differnces are very small and it further strengthens the argument that the implemented algorithm is correct. \par
+Lastly, to investigate the effects of regularization, the values of coefficients based on lambda have been compared with those obtained from the scikit's logistic regression with the l1 penalty. Both models have been tested on a specially prepared dataset with five informative features and five redundant features. The results are presented in Figure \ref{fig:comparison-synthetic-dataset-redundant-features}. To start, both models correctly identify informative features reflected in these features having large coefficient values, whereas the redundant features are close to 0. The two plots are almost identical, with slight differences in what lambda value the coefficients change from zero. This is likely because the scikit's logistic regression uses a different algorithm to compute the coefficients. However, the differences are minor, further strengthening the argument that the implemented algorithm is correct. \par
 
 
 \begin{figure}[h]
     \centering
   \includegraphics[width=\textwidth]{../results/logistic_regression_l1_logregccd_coefficients_redundant_features.png}
-    \caption{Comparison of LogRegCCD and LogisticRegression on synthetic dataset with redundant features}
+    \caption{Comparison of LogRegCCD and LogisticRegression on a synthetic dataset with redundant features}
     \label{fig:comparison-synthetic-dataset-redundant-features}
   \end{figure}
 
 
-To conclude it is fair to say in the given context that the implemented algorithm is correct, meaning that it is capable of performing logistic regression with lasso regularization and performs similarly to the scikit's implementation. The algorithm is capable of converging to a solution and the results are consistent with the expected behavior of the model. Further information such as the behaviour of the differences in coefficients between the models, or the exact coefficient values in different scenarios is available in the attached Python notebook.
+To conclude, it is fair to say that the implemented algorithm is correct in the given context, meaning that it can perform logistic regression with lasso regularization and performs similarly to the scikit's implementation. The algorithm can converge to a solution, and the results are consistent with the expected behavior of the model. Further information, such as the behavior of the differences in coefficients between the models or the exact coefficient values in different scenarios, is available in the attached Python notebook.
 
 
 \clearpage 
