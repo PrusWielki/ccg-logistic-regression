@@ -63,23 +63,6 @@ Advanced Machine Learning Course
 \vfill
 \hspace{0pt}
 \newpage
-
-%TODO:
-% Every point described below should be included in separate section. Maximal length of report is 6 pages A4 (title page and refernces are not included in the limit). Report should include:
-% • Methodology.
-% o Selection and generation of datasets.
-% o Details about algorithm implementation and applied optimizations
-% • Discussion about correctness of the LogRegCCD algorithm.
-% Suggested approach to address this point:
-% o Performance of the algorithm at lambda=0
-% o Likelihood function values and coefficient values depending on iteration
-% o Comparison with ready implementation of logistic regression with L1 penalty
-% • Impact of dataset parameters: n.p,d,g on the performance of LogRegCCD algorithm.
-% • Benchmark of LogRegCCD with LogisticRegression algorithm.
-% Suggested approach to address this point:
-% o Performance of algorithms regarding different metrics
-% o Values of coefficients obtained in these two methods
-
 \pagenumbering{arabic}
 \section{Selection and generation of datasets}
 
@@ -133,7 +116,6 @@ The logistic regression with lasso regularization log-likelihood function is app
     \min_{\beta_j} \left[ \frac{1}{2} \sum_{i=1}^{N} w_i \left( z_i - \beta_0 - \sum_{k \neq j} x_{ik} \beta_k - x_{ij} \beta_j \right)^2 + \lambda |\beta_j| \right]
 \end{equation}
 
-%TODO: this looks ugly, ask if it can stay that way
 
 The algorithm for the cyclic coordinate descent for a given feature $j$ is as follows. Compute partial residuals (excluding $\beta_j$): $r_i = z_i - (\beta_0 + \sum_{k \neq j} x_{ik} \beta_k)$, compute the gradient component $\rho_j$: $\rho_j = \sum_{i=1}^{N} w_i x_{ij} r_i$, apply soft-thresholding for L1 regularization: $\beta_j = \frac{S(\rho_j, \lambda)}{\sum_{i=1}^{N} w_i x_{ij}^2}$, where $S(z, \lambda) = \text{sign}(z) \cdot \max(|z| - \lambda, 0)$ and update $\beta_0$ that is not regularized: $\beta_0 = \frac{\sum_{i=1}^{N} w_i (z_i - x_i^T \beta)}{\sum_{i=1}^{N} w_i}$.
 
@@ -182,8 +164,6 @@ Similar conclusions can be drawn from the overall comparison of synthetic datase
     \label{fig:comparison-synthetic-dataset}
   \end{figure}
 
-% \subsection{Values of coefficients obtained in these two methods}
-%TODO: What should be here? Isn't it already contained in the comparison to L1?
 
 
 \section{Discussion about the correctness of the LogRegCCD algorithm}
