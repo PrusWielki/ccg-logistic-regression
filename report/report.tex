@@ -1,6 +1,6 @@
 \documentclass[11pt]{article}
 
-\usepackage[margin=0.88in]{geometry}
+\usepackage[margin=0.89in]{geometry}
 \usepackage{titlesec}
 \usepackage[hidelinks]{hyperref}
 \usepackage{adjustbox}
@@ -94,7 +94,7 @@ To generate the dataset, we first draw a binary class variable $Y$ from a Bernou
 The real datasets were taken from the OpenML \cite{OpenML2013} repository. The datasets were selected based on having the number of features of at least 50\% of the number of samples, preferably numerical features, a low amount of missing values, and a multi-class response variable. The datasets that have met these criteria are as follows:
 \begin{itemize}
     \item \textbf{ArrhythmiaDataset} - A binarized version of the Cardiac Arrhythmia Database, aiming to determine the type of arrhythmia from the ECG recordings. This dataset contains 279 features and 452 samples \cite{arrhythmia_5}.
-    \item \textbf{SpeechTreatmentDataset} - The dataset contains phonation samples from patients with voice disorders. The dataset assesses whether the voice rehabilitation treatment leads to phonations considered 'acceptable' or 'unacceptable'. The dataset contains 309 features and 126 samples \cite{lsvt_voice_rehabilitation_282}.
+    \item \textbf{SpeechTreatmentDataset} - The dataset contains phonation samples from patients with voice disorders. The dataset assesses whether the voice rehabilitation treatment leads to phonations considered \textit{acceptable} or \textit{unacceptable}. The dataset contains 309 features and 126 samples \cite{lsvt_voice_rehabilitation_282}.
     
     \item \textbf{SemeionDataset} - A binarized version of the Semeion Handwritten Digit Dataset, aiming to determine the digit from the handwritten samples. This dataset contains 256 features and 319 samples (only instances 1 and 0 are considered) \cite{semeion_handwritten_digit_178}.
     \item \textbf{DBWorldSubjectsDataset} - The dataset author collected 64 e-mails from the DBWorld newsletter and used them to train different algorithms to classify between \textit{announces of conferences} and \textit{everything else}. The dataset contains 230 features and 64 samples \cite{dbworld_e-mails_219}.
@@ -106,13 +106,11 @@ The datasets have been preprocessed by removing colinear features, imputing miss
 
 \section{Details about algorithm implementation and applied optimizations}
 
-% TODO: Make it shorter, describe just the optimizations from the paper. Actually double check them with what's in the paper.
-
 Logistic Regression is a machine learning method capable of binary classification. It predicts the probability of an outcome by computing the linear combination of input features and weights and then passing it through the sigmoid function.
 
-The output of the sigmoid function in range $[0,1]$ denotes the probability that the given feature vector $x$ belongs to the positive class. What follows the prediction rule is based on the output of the sigmoid function, if it's larger than a set threshold, such as 0.5, we assign the sample to class 1, otherwise assign to class 0.
+The output of the sigmoid function in range $[0,1]$ denotes the probability that the given feature vector $x$ belongs to the positive class. What follows the prediction rule is based on the output of the sigmoid function; if it's larger than a set threshold, such as 0.5, we assign the sample to class 1; otherwise, we assign it to class 0.
 
-To fit the model to the training data, one needs to minimize the loss function, which is, in this case, binary cross-entropy. The weights of the model need to be optimized to find the proper fit, this can be achieved by standard gradient descent algorithm.
+To fit the model to the training data, one needs to minimize the loss function, which is, in this case, binary cross-entropy. The model weights must be optimized to find the proper fit; a standard gradient descent algorithm can achieve this.
 
 It is also essential to account for overfitting. Overfitting describes when the trained model can predict samples from the training set very well but struggles on the test set. One method to prevent the model from being overfitted to the training data is Lasso Regularization. In essence, during the training process, the model will also minimize the absolute sum of the coefficients in addition to the loss function. Regularization might result in some of the weights being set to zero, effectively reducing the number of features the model is trained on. Regularization can be helpful when the number of features is vast and some are irrelevant to the prediction task.
 
@@ -127,7 +125,7 @@ The logistic regression with lasso regularization log-likelihood function is app
 
 
 \begin{equation}\label{eq:covariance-update}
-\sum_{i=1}^{N} x_{ij} r_i = \langle x_j, y \rangle - \sum_{k: \beta_k \neq 0} \langle x_j, x_k \rangle \beta_k
+\sum_{i=1}^{N} x_{ij} r_i = \langle x_j, y \rangle - \sum_{k: |\beta_k| > 0} \langle x_j, x_k \rangle \beta_k
 \end{equation}
 
 \begin{equation}\label{eq:feature-minimization}
@@ -164,9 +162,9 @@ The performance of the LogRegCCD algorithm was evaluated on synthetic datasets w
 
 \section{Benchmark of LogRegCCD with LogisticRegression algorithm}
 
-The overall performance comparison of all three models on the real datasets is available in Figure \ref{fig:real-data-boxplots}. The LogRegCCD algorithm performs nearly identically to the scikit's logistic regression with the l1 penalty. However, in the case of ArrhythmiaDataset and SpeechTreatmentDataset, it achieves higher results in terms of ROC AUC, balanced accuracy, and recall while having slightly worse precision, meaning that the LogRegCCD is better at predicting the positive class in these specific cases. Interestingly, standard logistic regression without penalty performs best regarding all metrics on the DBWorldSubjectsDataset dataset. However, it is essential to remember that this dataset is tiny, and the model might be overfitting the training data. Reardless, here, the LogRegCCD also achieves satisfactory results with accuracy in the neighborhood of 80\%. In some cases, such as the SemeionDataset, the models are able to achieve perfect precision and recall, again this is most likely due to the small size of the dataset. Because of the way the algorithm works (separetly performs calculations for each feature) we have tried to choose datasets of smaller size, otherwise the algorithm would take too long to compute.\par
+The overall performance comparison of all three models on the real datasets is available in Figure \ref{fig:real-data-boxplots}. The LogRegCCD algorithm performs nearly identically to the scikit's logistic regression with the l1 penalty. However, in the case of ArrhythmiaDataset and SpeechTreatmentDataset, it achieves higher results in terms of ROC AUC, balanced accuracy, and recall while having slightly worse precision, meaning that the LogRegCCD is better at predicting the positive class in these specific cases. Interestingly, standard logistic regression without penalty performs best regarding all metrics on the DBWorldSubjectsDataset dataset. However, it is essential to remember that this dataset is tiny, and the model might be overfitting the training data. Regardless, here, the LogRegCCD also achieves satisfactory results with accuracy in the neighborhood of 80\%. In some cases, such as the SemeionDataset, the models are able to achieve perfect precision and recall, again this is most likely due to the small size of the dataset. Because of how the algorithm works (separately performs calculations for each feature), we have tried to choose datasets of smaller size. Otherwise, the algorithm would take too long to compute.\par
 
-Similar conclusions can be drawn from the overall comparison of synthetic datasets depicted in Figure \ref{fig:comparison-synthetic-dataset}. The LogRegCCD algorithm performs similarly to the scikit's logistic regression with l1 penalty and without penalty. A notable difference is that in terms of accuracy, Scikit's model with the l1 penalty performs somewhat better than the LogRegCCD algorithm. In contrast, the LogRegCCD algorithm performs marginally better in precision and Scikit's model without penalty, achieving slightly higher balanced accuracy on average. As a result one might conclude that depending on the metric of interest it is worthwhile to consider a different model, however the differences are negligible and it is more important to choose the model that is best suited for the specific dataset and task at hand. \par
+Similar conclusions can be drawn from the overall comparison of synthetic datasets depicted in Figure \ref{fig:comparison-synthetic-dataset}. The LogRegCCD algorithm performs similarly to the scikit's logistic regression with l1 penalty and without penalty. A notable difference is that in terms of accuracy, Scikit's model with the l1 penalty performs somewhat better than the LogRegCCD algorithm. In contrast, the LogRegCCD algorithm performs marginally better in precision and Scikit's model without penalty, achieving slightly higher balanced accuracy on average. As a result, one might conclude that depending on the metric of interest, it is worthwhile to consider a different model; however, the differences are negligible, and it is more important to choose the model best suited for the specific dataset and task at hand. \par
 
 
 \begin{figure}[h]
@@ -191,7 +189,7 @@ Similar conclusions can be drawn from the overall comparison of synthetic datase
 
 The previous results already hint at the correctness of the implemented algorithm in terms of its similar performance to Scikit's logistic regression. However, to investigate the correctness of the algorithm further, we can look at the log-likelihood function values and coefficient values, depending on iteration. The log-likelihood function measures how well the model fits the data. The higher the value, the better the fit. The coefficient values are the weights assigned to each feature in the model. The higher the value, the more important the feature is for the prediction task. \par
 
-At lambda = 0, the log-likelihood function values and coefficient values depending on iteration are presented in Figure \ref{fig:log-likelihood-synthetic-dataset-lambda-0} and Figure \ref{fig:coefficients-synthetic-dataset-lambda-0} respectively. The log-likelihood function values increase with each iteration, meaning the model improves with each step. The coefficient values also change with each iteration but stabilize after around 100 iterations. Although the iteration limit is set to 1000, the process stops at around 250 iterations, meaning the model successfully converges. This is a good indicator that the implemented model is correct.\par
+At lambda = 0, the log-likelihood function values and coefficient values depending on iteration are presented in Figure \ref{fig:log-likelihood-synthetic-dataset-lambda-0} and Figure \ref{fig:coefficients-synthetic-dataset-lambda-0} respectively. The log-likelihood function values increase with each iteration, meaning the model improves with each step. Similarly, the coefficient values change with each iteration but stabilize after around 100 iterations. Although the iteration limit is set to 1000, the process stops at around 250 iterations, meaning the model successfully converges. This is a good indicator that the implemented model is correct.\par
 
 
 \begin{figure}[h]
